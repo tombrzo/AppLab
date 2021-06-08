@@ -1,0 +1,228 @@
+@media (max-width: 620px) {
+    .features {
+        @include centered;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-left: 10px;
+        .features__left {
+            @include centered;
+            max-width: 100%;
+            position: relative;
+            .picture {
+                max-width: 100%;
+                @include flex-primary;
+                flex-direction: column;
+                padding-top: 55px;
+                padding-bottom: 55px;
+                .ellipse {
+                    max-width: 100%;
+                }
+                .phone-smart {
+                    max-width: 65%;
+                    transform: rotate(-15deg);
+                    position: absolute;  
+                }
+            }
+        }  
+        .features__right {
+            @include centered;
+            margin: 50px 15px 0 15px;
+            box-sizing: border-box;
+            .features__title {
+                color: $accent;
+                font-size: $title-font-size;
+                font-weight: $title-font-weight;
+                line-height: 140%;
+            }
+            .features__subtitle { 
+                color: $body-color;
+                margin-bottom: 30px;
+            }
+            .wrapper_right {
+                @include flex-primary;
+                flex-direction: column;
+                .box {
+                    @include box;
+                    .icon-red {
+                        @include box-icon;
+                        background-color: $icon-red-bg;
+                    }
+                    .content-red {
+                        @include box-content;
+                        .box__header_red {
+                            color: $red;
+                            @include box-header; 
+                        }
+                    }
+                    .icon-blue {
+                        @include box-icon;
+                        background-color: $icon-blue-bg;
+                    }
+                    .content-blue {
+                        @include box-content;
+                        .box__header_blue {
+                            color: $secondary-color;
+                            @include box-header;
+                        }
+                    }
+                    .icon-green {
+                        @include box-icon;
+                        background-color: $icon-green-bg;
+                    }
+                    .content-green {
+                        @include box-content;
+                        .box__header_green {
+                            color: $green;
+                            @include box-header;
+                        } 
+                    }
+                }
+            } 
+        }       
+    }
+}
+
+@media (min-width: 621px) {
+    .features {
+        @include centered;
+        @include flex-primary;
+        flex-direction: column;
+        margin-top: 50px;
+        .features__left {
+            position: relative;
+            .picture {
+                max-width: 900px;
+                height:auto;
+                @include flex-primary;
+                padding-top: 55px;
+                padding-bottom: 55px;
+                .ellipse {
+                }
+                .phone-smart {
+                    max-width: 65%;
+                    max-height: 100%;
+                    transform: rotate(-15deg);
+                    position: absolute;  
+                }
+            }
+        }
+        .features__right {
+            max-width: 550px;
+            @include centered;
+            margin: 50px 0px 0px;
+            .features__title {
+                color: $accent;
+                font-size: $title-font-size;
+                font-weight: $title-font-weight;
+                line-height: 140%;
+                padding-left: 10px;
+            }
+            .features__subtitle{ 
+                color: $body-color;
+                margin-bottom: 30px;
+                padding-left: 10px;
+            }
+            .wrapper_right {
+                @include flex-primary;
+                flex-direction: column;
+                padding-left: 10px;
+                .box {
+                    @include box;
+                    .icon-red {
+                        @include box-icon;
+                        background-color: $icon-red-bg;
+                    }
+                    .content-red {
+                        @include box-content;
+                        .box__header_red {
+                            color: $red;
+                            @include box-header;
+                        }
+                    }
+                    .icon-blue {
+                        @include box-icon;
+                        background-color: $icon-blue-bg;
+                    }
+                    .content-blue {
+                        @include box-content;
+                        .box__header_blue {
+                            color: $secondary-color;
+                            @include box-header;
+                        }
+                    }
+                    .icon-green {
+                        @include box-icon;
+                        background-color: $icon-green-bg;
+                    }
+                    .content-green {
+                        @include box-content;
+                        .box__header_green {
+                            color: $green;
+                            @include box-header;
+                        } 
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:900px) {
+    .features {
+        @include centered;
+        @include flex-primary;
+        flex-direction: row; 
+        .features__left {
+            width: 435px;
+            transform: translateX(-30px);
+            .picture {
+                max-width: 100%;
+                height:auto;
+                @include flex-primary;
+                .ellipse {
+                    max-width: 100%;
+                    height: auto;
+                }
+                .phone-smart {
+                    max-width: 67%;
+                    max-height: auto;
+                    transform: rotate(-15deg);  
+                }
+            }
+        }
+        .features__right {
+            width: 450px;
+            margin: 50px 0px 0px 10px;
+            padding-right: 10px;
+            .features__title {
+            }
+            .features__subtitle { 
+                margin-bottom: 70px;
+            }
+            .wrapper_right {
+                align-items: flex-start;
+                .box {
+                    margin-bottom: 50px;
+                    width: 400px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1170px) {
+    .features {
+        .features__left {
+            width: 550px;
+            transform: translateX(-60px);  
+        }
+        .features__right {
+            width: 565px;
+            .wrapper_right {
+                .box{
+                    width: 560px;
+                }
+            }                    
+        }
+    }
+}

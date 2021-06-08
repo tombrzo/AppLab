@@ -1,0 +1,240 @@
+@media (max-width: 620px) {
+    .download {
+        @include centered;
+        @include margin-auto;
+        .download__container {
+            max-width: 100%;
+            border-bottom: 2px solid $shadow_color;
+            box-shadow: 0 5px 5px -2px $shadow_color;
+            padding: 70px 20px 0 20px;
+            @include margin-auto;
+            .download__text {
+                max-width: 100%;
+                @include flex-primary;
+                justify-content: flex-start;
+                margin-bottom: 60px;
+                .download__text_title {
+                    font-size: $title-font-size;
+                    font-weight: $title-font-weight;
+                    color: $accent;
+                    line-height: 140%;
+                    margin-bottom: 30px;
+                    text-align: left;
+                }
+                .download__text_contents {
+                    font-size: $paragraf-font-size;
+                    font-weight: 400;
+                    color: $body-color;
+                    line-height: 160%;
+                    margin-bottom: 40px;
+                    text-align: left;
+                }
+                .download__text_logos{
+                    @include flex-primary;
+                    justify-content: flex-start;
+                    .logo-google{
+                        width: 185px;
+                        height:55px;
+                        object-fit: contain;
+                        margin-right: 30px;
+                    }
+                    .logo-app{
+                        width: 185px;
+                        height:55px;
+                        object-fit: contain;
+                    }
+                }
+            }
+            .download__image{
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+@media (min-width: 621px) {
+    .download {
+        @include centered;
+        border-top: 2px solid $border_color;
+        box-shadow: 0 5px 5px -2px $shadow_color;
+        overflow: hidden;
+        .download__container {
+            max-width: 621px;
+            padding: 70px 20px 0 20px;
+            @include margin-auto;
+            .download__text {
+                max-width: 565px;
+                @include flex-primary;
+                justify-content: flex-start;
+                margin-bottom: 60px;
+                .download__text_title {
+                    font-size: 50px;
+                    font-weight: $title-font-weight;
+                    color: $accent;
+                    line-height: 140%;
+                    margin-bottom: 30px;
+                    text-align: left;
+                }
+                .download__text_contents {
+                    font-size: $paragraf-font-size;
+                    font-weight: 400;
+                    color: $body-color;
+                    line-height: 160%;
+                    margin-bottom: 40px;
+                    text-align: left;
+                }
+                .download__text_logos{
+                    @include flex-primary;
+                    justify-content: flex-start;
+                    .logo-google{
+                        width: 185px;
+                        height:55px;
+                        object-fit: contain;
+                        margin-right: 30px;
+                    }
+                    .logo-app{
+                        width: 185px;
+                        height:55px;
+                        object-fit: contain;
+                    }
+                }
+            }
+            .download__image{
+                max-width: 100%;
+                height: auto;
+            }
+            .download__picture{
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+@media (min-width: 900px) {
+    .download {
+        @include centered;
+        width: 100%;
+        box-shadow: 0 5px 5px -2px $shadow_color;
+        .download__container {
+            position: relative;
+            max-width: 899px;
+            padding: 70px 20px 30px 20px;
+            @include margin-auto;
+            .download__text {
+                max-width: 58%;
+                @include flex-primary;
+                justify-content: flex-start;
+                margin-bottom: 60px;
+                .download__text_title {
+                    font-size: 50px;
+                    font-weight: $title-font-weight;
+                    color: $accent;
+                    line-height: 140%;
+                    margin-bottom: 30px;
+                    text-align: left;
+                }
+                .download__text_contents {
+                    font-size: $paragraf-font-size;
+                    font-weight: 400;
+                    color: $body-color;
+                    line-height: 160%;
+                    margin-bottom: 40px;
+                    text-align: left;
+                }
+                .download__text_logos {
+                    @include flex-primary;
+                    justify-content: flex-start;
+                    .logo-google{
+                        width: 185px;
+                        height:55px;
+                        object-fit: contain;
+                        margin-right: 30px;
+                    }
+                    .logo-app {
+                        width: 185px;
+                        height:55px;
+                        object-fit: contain;
+                    }
+                }
+            }
+            .download__image {
+                width: 100%;
+                height: 500px;
+                position: absolute;
+                top: 0;
+                left: 58%;
+            }
+            .download__picture {
+                position: absolute;
+                width: auto;
+                height: 100%;
+                top: 0;
+                left: 0px;
+            }
+        }
+    }
+}
+@media (min-width: 1170px) {
+    .download {
+        @include centered;
+        width: 100%;
+        box-shadow: 0 5px 5px -2px $shadow_color;
+        .download__container {
+            position: relative;
+            max-width: 1169px;
+            padding: 70px 20px 26px 30px;
+            @include margin-auto;
+            .download__text {
+                max-width: 58%;
+                @include flex-primary;
+                justify-content: flex-start;
+                margin-bottom: 60px;
+                .download__text_title {
+                    font-size: 50px;
+                    font-weight: $title-font-weight;
+                    color: $accent;
+                    line-height: 140%;
+                    margin-bottom: 30px;
+                    text-align: left;
+                }
+                .download__text_contents {
+                    font-size: $paragraf-font-size;
+                    font-weight: 400;
+                    color: $body-color;
+                    line-height: 160%;
+                    margin-bottom: 40px;
+                    text-align: left;
+                }
+                .download__text_logos {
+                    @include flex-primary;
+                    justify-content: flex-start;
+                    .logo-google{
+                        width: 185px;
+                        height:55px;
+                        object-fit: contain;
+                        margin-right: 30px;
+                    }
+                    .logo-app {
+                        width: 185px;
+                        height:55px;
+                        object-fit: contain;
+                    }
+                }
+            }
+            .download__image {
+                width: 100%;
+                height: 400px;
+                position: absolute;
+                top: 0;
+                left: 58%;
+            }
+            .download__picture {
+                position: absolute;
+                width: auto;
+                height: 100%;
+                top: 0;
+                left: 20px;
+            }
+        }
+    }
+}

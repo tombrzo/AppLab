@@ -1,0 +1,233 @@
+@media (max-width:620px) {
+
+    .faq{
+        .faq__container {
+            width: 100%;
+            @include centered;
+            @include flex-primary;
+            flex-direction: column;
+            font-family: $body-font;
+            margin-bottom: 60px;
+            .faq__text {
+                max-width: 550px;
+                margin: 0px auto 30px auto ;
+                text-align: center;
+                .faq__text_title {
+                    font-size: $title-font-size;
+                    font-weight: $title-font-weight;
+                    color: $accent;
+                    margin-bottom: 30px;
+                }
+                .faq__text_contents {
+                    font-size: $paragraf-font-size;
+                    font-weight: normal;
+                    color: $body-color;
+                    line-height: 140%;
+                }  
+            }
+            .faq__accordion {
+                max-width: 550px;
+                max-height: auto;
+                margin-left: auto;
+                margin-right: auto;
+                .accordion {
+                    @include flex-basic;
+                    width: 100%;
+                    height: 80px;
+                    position: relative;
+                    background-color:#f5f7fa;
+                    color: $accent;
+                    cursor: pointer;
+                    border: none;
+                    padding: 0 40px 0 20px;
+                    outline: none;
+                    text-align: left;
+                    font-size: 16px;
+                    font-weight: $title-font-weight;
+                    transition: 0.4s; 
+                }
+                .accordion:after {
+                    content: '\254B'; /* Unicode character for "plus" sign (+) */
+                    position: absolute;
+                    font-size: 12px;
+                    color: $accent;
+                    float: right;
+                    right: 15px;
+                } 
+                .active {
+                    background-color:#f5f7fa; 
+                }
+                .active:after {
+                    content: "\2500"; /* Unicode character for "minus" sign (-) */
+                    font-size: 16px;
+                    position: absolute;
+                }
+                .active ~ .panel {
+                    margin-top: 0;
+                }
+                .accordion:hover {
+                    background-color: #efefef; 
+                }
+                
+                .panel {
+                    padding: 0 20px;
+                    max-height: 0;
+                    font-size: $paragraf-font-size;
+                    color: $body-color;
+                    background-color: #f5f7fa;
+                    overflow: hidden;
+                    transition: 0.5s;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:621px) {
+
+    .faq{
+        .faq__container {
+            width: 100%;
+            @include centered;
+            @include flex-primary;
+            flex-direction: column;
+            font-family: $body-font;
+            margin-bottom: 60px;
+            .faq__text {
+                max-width: 610px;
+                margin: 0px auto 30px auto ;
+                text-align: center;
+                .faq__text_title {
+                    font-size: $title-font-size;
+                    font-weight: $title-font-weight;
+                    color: $accent;
+                    margin-bottom: 30px;
+                }
+                .faq__text_contents {
+                    font-size: $paragraf-font-size;
+                    font-weight: normal;
+                    color: $body-color;
+                    line-height: 140%;
+                }  
+            }
+            .faq__accordion {
+                max-width: 610px;
+                max-height: auto;
+                margin-left: auto;
+                margin-right: auto;
+                .accordion {
+                    @include flex-basic;
+                    width: 100%;
+                    height: 80px;
+                    position: relative;
+                    background-color:#f5f7fa;
+                    color: $accent;
+                    cursor: pointer;
+                    border: none;
+                    padding: 0 40px 0 20px;
+                    outline: none;
+                    text-align: left;
+                    font-size: 16px;
+                    font-weight: $title-font-weight; 
+                }
+                .accordion:hover {
+                    background-color: #efefef;
+                }
+                .accordion:after {
+                    content: '\254B'; /* Unicode character for "plus" sign (+) */
+                    position: absolute;
+                    font-size: 12px;
+                    color: $accent;
+                    float: right;
+                    right: 15px;
+                } 
+                .active {
+                    background-color:#f5f7fa; 
+                }
+                .panel {
+                    padding: 0 20px;
+                    max-height: 0;
+                    font-size: $paragraf-font-size;
+                    color: $body-color;
+                    background-color: #f5f7fa;
+                    overflow: hidden;
+                    transition: all 0.3s;
+                    margin-top: 0px;
+                    margin-bottom: 10px;
+                }
+                .panel--inverted {
+                    padding: 0 20px;
+                    max-height: 100%;
+                    font-size: $paragraf-font-size;
+                    color: $body-color;
+                    background-color: #f5f7fa;
+                    overflow: hidden;
+                    margin-top: 0px;
+                    margin-bottom: 10px;
+                }
+                .active:after {
+                    content: "\2500"; /* Unicode character for "minus" sign (-) */
+                    font-size: 16px;
+                    position: absolute;
+                }
+                
+            }
+        }
+    }
+}
+
+@media (min-width:900px) {
+
+    .faq{
+        .faq__container { 
+            .faq__text {
+                max-width: 880px;  //
+                margin: 0px auto 70px auto ; //
+                .faq__text_title {
+                }
+                .faq__text_contents {
+                }  
+            }
+            .faq__accordion {
+                max-width: 880px;   //
+                .accordion{
+                    font-size: $box-header-size;
+                    padding: 0 50px 0px 50px;
+                }
+                .accordion:after {  
+                    right: 50px;
+                    font-size: 14px;
+                } 
+                .active:after {
+                    font-size: 20px;
+                }
+                .panel {
+                    padding: 0px 50px ;  //
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1170px) {
+
+    .faq{
+        .faq__container { 
+            .faq__text {
+                max-width: 1100px;  //
+                margin: 0px auto 70px auto ; 
+            }
+            .faq__accordion {
+                max-width: 1100px;   //
+                .accordion{
+                    font-size: $box-header-size;
+                    padding: 0 70px 0px 70px;  //
+                }
+                .panel {
+                    padding: 0px 70px ;  //
+                }
+            }
+        }
+    }
+}

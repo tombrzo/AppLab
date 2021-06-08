@@ -1,0 +1,306 @@
+@media (max-width: 620px) {
+    .why-choose {
+        @include centered;
+        margin-top: 55px;
+        box-sizing: border-box;
+        .why-choose__container {
+            @include centered;
+            max-width: 100%;
+            padding-left: 20px;
+            padding-right: 20px;
+            .why-choose__container_text {
+                margin-bottom: 60px;
+                padding-left: 40px;
+                padding-right: 40px;
+                .title {
+                    color: $accent;
+                    font-size: $title-font-size;
+                    font-weight: $title-font-weight;
+                    line-height: 140%;
+                    margin-bottom: 30px;
+                    display: block;
+                    text-align: center;
+                }
+                .subtitle {
+                    @include centered;
+                    color: $body-color;
+                    font-size: $paragraf-font-size;
+                    text-align: center;;
+                    margin-bottom: 30px;
+                    margin-top: 0px;
+                    display: block;
+                    box-sizing: border-box;
+                    display: block;
+                }
+            }
+            .why-choose__container_boxes {
+                @include flex-primary;
+                flex-direction: column;
+                padding-left: 20px;
+                padding-right: 20px;
+                .box {
+                    @include flex-primary;
+                    flex-direction: column;
+                    margin-bottom: 60px;
+                    .icon-red {
+                        @include box-icon;
+                        background-color: $icon-red-bg;
+                        margin-bottom: 30px;
+                    }
+                    .content-red {
+                        @include centered;
+                        color: $body-color;
+                        text-align: center;
+                        .box__header_red {
+                            @include box-header;
+                            color: $accent; 
+                        }
+                    }
+                    .icon-blue {
+                        @include box-icon;
+                        background-color: $icon-blue-bg;
+                        margin-bottom: 30px;
+                    }
+                    .content-blue {
+                        @include centered;
+                        color: $body-color;
+                        text-align: center;
+                        .box__header_blue {
+                            @include box-header;
+                            color: $accent; 
+                        }
+                    }
+                    .icon-orange {
+                        @include box-icon;
+                        background-color: $icon-orange-bg;
+                        margin-bottom: 30px;
+                    }
+                    .content-orange {
+                        @include centered;
+                        color: $body-color;
+                        text-align: center;
+                        .box__header_orange {
+                            @include box-header;
+                            color: $accent;
+                        } 
+                    }
+                    .icon-green {
+                        @include box-icon;
+                        background-color: $icon-green-bg;
+                        margin-bottom: 30px;
+                    }
+                    .content-green {
+                        @include centered;
+                        color: $body-color;
+                        text-align: center;
+                        .box__header_green {
+                            @include box-header;
+                            color: $accent;
+                        } 
+                    }
+                    .icon-gray {
+                        @include box-icon;
+                        background-color: $icon-gray-bg;
+                        margin-bottom: 30px;
+                    }
+                    .content-gray {
+                        @include centered;
+                        color: $body-color;
+                        text-align: center;
+                        .box__header_gray {
+                            @include box-header;
+                            color: $accent;
+                        } 
+                    }
+                    .icon-redlight {
+                        @include box-icon;
+                        background-color: $icon-redlight-bg;
+                        margin-bottom: 30px;
+                    }
+                    .content-redlight {
+                        @include centered;
+                        color: $body-color;
+                        text-align: center;
+                        .box__header_redlight {
+                            @include box-header;
+                            color: $accent;
+                        } 
+                    }
+                } 
+            }      
+        }
+    }
+}
+
+@media (min-width:621px) {
+    .why-choose {
+        @include centered;
+        margin-top: 30px;
+        @include flex-primary;
+        box-sizing: border-box;
+        .why-choose__container {
+            max-width: 635px;
+            @include centered;
+            .why-choose__container_text {
+                margin-bottom: 40px;
+                padding-left: 40px;
+                padding-right: 40px;
+                .title {
+                    color: $accent;
+                    font-size: $title-font-size;
+                    font-weight: $title-font-weight;
+                    line-height: 140%;
+                    margin-bottom: 30px;
+                    display: block;
+                    text-align: center;
+                }
+                .subtitle {
+                    @include centered;
+                    color: $body-color;
+                    font-size: $paragraf-font-size;
+                    text-align: center;;
+                    margin-bottom: 30px;
+                    margin-top: 0px;
+                    display: block;
+                    box-sizing: border-box;
+                    display: block;
+                }
+            }
+            .why-choose__container_boxes {
+                max-width:635px;
+                @include flex-basic;
+                flex-direction: row;
+                padding: 0 40px;
+                .box {
+                    width:250px;
+                    @include flex-primary;
+                    flex-direction: row;
+                    margin-bottom: 65px;
+                    .icon-red {
+                        @include box-icon;
+                        background-color: $icon-red-bg;
+                        margin-bottom: 30px;
+                    }
+                    .content-red {
+                        @include centered;
+                        color: $body-color;
+                        text-align: center;
+                        .box__header_red {
+                            @include box-header;
+                            color: $accent; 
+                        }
+                    }
+                    .icon-blue {
+                        @include box-icon;
+                        background-color: $icon-blue-bg;
+                        margin-bottom: 30px;
+                    }
+                    .content-blue {
+                        @include centered;
+                        color: $body-color;
+                        text-align: center;
+                        .box__header_blue {
+                            @include box-header;
+                            color: $accent; 
+                        }
+                    }
+                    .icon-orange {
+                        @include box-icon;
+                        background-color: $icon-orange-bg;
+                        margin-bottom: 30px;
+                    }
+                    .content-orange {
+                        @include centered;
+                        color: $body-color;
+                        text-align: center;
+                        .box__header_orange {
+                            @include box-header;
+                            color: $accent;
+                        } 
+                    }
+                    .icon-green {
+                        @include box-icon;
+                        background-color: $icon-green-bg;
+                        margin-bottom: 30px;
+                    }
+                    .content-green {
+                        @include centered;
+                        color: $body-color;
+                        text-align: center;
+                        .box__header_green {
+                            @include box-header;
+                            color: $accent;
+                        } 
+                    }
+                    .icon-gray {
+                        @include box-icon;
+                        background-color: $icon-gray-bg;
+                        margin-bottom: 30px;
+                    }
+                    .content-gray {
+                        @include centered;
+                        color: $body-color;
+                        text-align: center;
+                        .box__header_gray {
+                            @include box-header;
+                            color: $accent;
+                        } 
+                    }
+                    .icon-redlight {
+                        @include box-icon;
+                        background-color: $icon-redlight-bg;
+                        margin-bottom: 30px;
+                    }
+                    .content-redlight {
+                        @include centered;
+                        color: $body-color;
+                        text-align: center;
+                        .box__header_redlight {
+                            @include box-header;
+                            color: $accent;
+                        } 
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:900px) {
+    .why-choose {
+        .why-choose__container {
+            max-width: 850px;
+            .why-choose__container_text {
+                margin-bottom: 80px;
+            }
+            .why-choose__container_boxes {
+                max-width:850px;
+                padding: 0px 0px;
+                .box {
+                    width:230px; 
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1170px) {
+    .why-choose {
+        .why-choose__container {
+            min-width: 1020px;
+            .why-choose__container_text {
+                margin-bottom: 80px;
+            }
+            .why-choose__container_boxes {
+                max-width:1050px;
+                padding: 0px 0px;
+                justify-content: space-between;
+                .box {
+                    width:270px;
+
+                }
+            }
+        }
+    }
+}
