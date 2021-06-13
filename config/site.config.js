@@ -9,13 +9,13 @@ if (!ROOT) {
 
 const config = {
   // Your website's name, used for favicon meta tags
-  site_name: 'Static Site Boilerplate',
+  site_name: 'AppLab',
 
   // Your website's description, used for favicon meta tags
-  site_description: 'A modern boilerplate for static website development',
+  site_description: 'AppLab',
 
   // Your website's URL, used for sitemap
-  site_url: '',
+  site_url: 'tombrzo.github.io/AppLab/',
 
   // Google Analytics tracking ID (leave blank to disable)
   googleAnalyticsUA: '',

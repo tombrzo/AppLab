@@ -1,6 +1,6 @@
 const path = require('path');
-const config = require('./site.config');
 const FtpDeploy = require('ftp-deploy');
+const config = require('./site.config');
 
 const ftpDeploy = new FtpDeploy();
 
@@ -12,7 +12,7 @@ ftpDeploy.deploy({
   password: 'password',
 
   // FTP Host
-  host: 'ftp.yourwebsite.com',
+  host: 'ftp.github.com/tombrzo/AppLab.git/',
 
   // FTP Port
   port: 21,

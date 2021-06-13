@@ -19,7 +19,7 @@ async function runSetup() {
   clear();
   console.log(
     chalk.red(
-      figlet.textSync('Static Site Boilerplate', { horizontalLayout: 'fitted' })
+      figlet.textSync('AppLab', { horizontalLayout: 'fitted' })
     )
   );
 
@@ -28,13 +28,13 @@ async function runSetup() {
       type: 'input',
       name: 'site_name',
       message: 'What is the name of your website?',
-      initial: 'Static Site Boilerplate'
+      initial: 'AppLab'
     },
     {
       type: 'input',
       name: 'site_description',
       message: 'What is a description of your website?',
-      initial: 'A modern boilerplate for static website development'
+      initial: 'AppLAb'
     },
     {
       type: 'input',
