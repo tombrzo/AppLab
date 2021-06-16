@@ -1,228 +1,282 @@
+@media (max-width: 620px) {
+  .hero {
+    @include centered;
 
-@media (max-width:620px){
-    .hero{
+    margin-top: 40px;
+    font-family: $body-font;
+    background-image: url(../images/hero-1.jpg);
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    &__text {
+      @include centered;
+
+      margin-left: 20px;
+
+      .award {
+        @include flex-basic;
+
+        max-width: 100%;
+        height: 40px;
+        background-color: $award-color;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        margin-right: 30px;
+        border-radius: 25px;
+
+        &-icon {
+          width: 40px;
+          height: 40px;
+          color: $white;
+          background-color: $header-span-color;
+          border-radius: 25px;
+          margin-right: 8px;
+
+          .svg {
+            width: 40px;
+            height: 40px;
+          }
+        }
+
+        &-sentence {
+          color: $body-color;
+          font-size: 14px;
+        }
+      }
+
+      .best-app {
         @include centered;
-        margin-top: 40px;
-        font-family: $body-font;
-        background-image: url(../images/hero-1.jpg);
-        background-position: bottom;
-        background-size: contain;
-        background-repeat: no-repeat;
-        &__text{
-            @include centered;
-            margin-left: 20px;
-            .award{
-                max-width: 100%;
-                height:40px;
-                background-color: $award-color;
-                @include flex-basic;
-                justify-content: flex-start;
-                flex-wrap: nowrap;
-                margin-right: 30px;
-                border-radius: 25px;
-                &-icon {
-                    width: 40px;
-                    height: 40px;
-                    color: $white;
-                    background-color: $header-span-color;
-                    border-radius: 25px;
-                    margin-right: 8px;
-                    .svg{
-                        width: 40px;
-                        height: 40px;
-                    }
-                }
-                &-sentence{
-                    color: $body-color;
-                    font-size: 14px;
-                }
-            }
-            .best-app{
-                @include centered; 
-                &__title{
-                    font-size: $hero-heading-sizeSM;
-                    font-weight: 600;
-                    color: $accent;
-                }
-                &__subtitle{
-                    font-size: $hero-subtitle-size;
-                    color: $body-color;
-                    padding-bottom: 25px;
-                }
-            }
-            .text__links{
-                @include flex-basic;
-                flex-direction: column;
-                margin-right: 30px;
-                &_button{        //button hero "Try it for free 
-                    @include button;
-                    width: 80%;
-                    text-align: center;
-                    padding-top: 20px;
-                    padding-bottom: 20px;
-                    text-decoration: none;
-                    font-size: $paragraf-font-size;
-                    margin-bottom: 25px;
-                }
-                &_button:hover{
-                    background-color: $hover-color;
-                }
-                &_video{
-                    color: $primary-color;
-                    text-decoration: none;
-                    font-size: $paragraf-font-size;
-                    margin-bottom: 25px;
-                }
-            } 
-        }  
-        &__phone{
-            @include centered;
-            padding: 30px;
+
+        &__title {
+          font-size: $hero-heading-sizeSM;
+          font-weight: 600;
+          color: $accent;
         }
+
+        &__subtitle {
+          font-size: $hero-subtitle-size;
+          color: $body-color;
+          padding-bottom: 25px;
+        }
+      }
+
+      .text__links {
+        @include flex-basic;
+
+        flex-direction: column;
+        margin-right: 30px;
+
+        &_button {
+          //button hero "Try it for free
+          @include button;
+
+          width: 80%;
+          text-align: center;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          text-decoration: none;
+          font-size: $paragraph-font-size;
+          margin-bottom: 25px;
+        }
+
+        &_button:hover {
+          background-color: $hover-color;
+        }
+
+        &_video {
+          color: $primary-color;
+          text-decoration: none;
+          font-size: $paragraph-font-size;
+          margin-bottom: 25px;
+        }
+      }
     }
+
+    &__phone {
+      @include centered;
+
+      padding: 30px;
+    }
+  }
 }
 
-@media (min-width:621px){
-    .hero{
+@media (min-width: 621px) {
+  .hero {
+    @include centered;
+
+    margin-top: 40px;
+    font-family: $body-font;
+    background-image: url(../images/hero-1.jpg);
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+
+    &__text {
+      @include centered;
+
+      width: 50%;
+      margin-left: 40px;
+
+      .award {
+        @include flex-basic;
+
+        width: 100%;
+        height: 40px;
+        background-color: $award-color;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        margin-right: 30px;
+        border-radius: 25px;
+
+        &-icon {
+          width: 40px;
+          height: 40px;
+          color: $white;
+          background-color: $header-span-color;
+          border-radius: 25px;
+          margin-right: 8px;
+
+          .svg {
+            width: 40px;
+            height: 40px;
+          }
+        }
+
+        &-sentence {
+          color: $body-color;
+          font-size: 14px;
+        }
+      }
+
+      .best-app {
         @include centered;
-        margin-top: 40px;
-        font-family: $body-font;
-        background-image: url(../images/hero-1.jpg);
-        background-position: bottom;
-        background-size: contain;
-        background-repeat: no-repeat;
-        display: flex;
-        justify-content: space-between;
-        &__text{
-            @include centered;
-            width: 50%;
-            margin-left: 40px;
-            .award{
-                width: 100%;
-                height: 40px;
-                background-color: $award-color;
-                @include flex-basic;
-                justify-content: flex-start;
-                flex-wrap: nowrap;
-                margin-right: 30px;
-                border-radius: 25px;
-                &-icon{
-                    width: 40px;
-                    height: 40px;
-                    color: $white;
-                    background-color: $header-span-color;
-                    border-radius: 25px;
-                    margin-right: 8px;
-                    .svg{
-                        width: 40px;
-                        height: 40px;
-                    }
-                }
-                &-sentence{
-                    color: $body-color;
-                    font-size: 14px;
-                }
-            }
-            .best-app{
-                @include centered; 
-                &__title{
-                    font-size: $hero-heading-size;
-                    font-weight: 600;
-                    color: $accent;
-                    margin-top: 20px;
-                }
-                &__subtitle{
-                    font-size: $hero-subtitle-size;
-                    color: $body-color;
-                    padding-bottom: 25px;
-                    margin-top: -25px;
-                }
-            }
-            .text__links{
-                @include flex-basic;
-                flex-direction: column;
-                margin-right: 30px;
-                &_button{        //button hero "Try it for free 
-                    @include button;
-                    width: 100%;
-                    text-align: center;
-                    padding-top: 20px;
-                    padding-bottom: 20px;
-                    margin-bottom: 25px;
-                    text-decoration: none;
-                    font-size: $paragraf-font-size;
-                }
-                &_button:hover{
-                    background-color: $hover-color;
-                }
-                &_video{
-                    color: $primary-color;
-                    text-decoration: none;
-                    font-size: $paragraf-font-size;
-                    margin-bottom: 25px;
-                }
-            }  
-        } 
-        &__phone{
-            @include centered;
-            margin-right: 40px;
-            width: 30%;
-            &_phone01{
-                height: auto;
-                .phone-image{
-                    @include image-fit;
-                }
-            }
+
+        &__title {
+          font-size: $hero-heading-size;
+          font-weight: 600;
+          color: $accent;
+          margin-top: 20px;
         }
+
+        &__subtitle {
+          font-size: $hero-subtitle-size;
+          color: $body-color;
+          padding-bottom: 25px;
+          margin-top: -25px;
+        }
+      }
+
+      .text__links {
+        @include flex-basic;
+
+        flex-direction: column;
+        margin-right: 30px;
+
+        &_button {
+          //button hero "Try it for free
+          @include button;
+
+          width: 100%;
+          text-align: center;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          margin-bottom: 25px;
+          text-decoration: none;
+          font-size: $paragraph-font-size;
+        }
+
+        &_button:hover {
+          background-color: $hover-color;
+        }
+
+        &_video {
+          color: $primary-color;
+          text-decoration: none;
+          font-size: $paragraph-font-size;
+          margin-bottom: 25px;
+        }
+      }
     }
+
+    &__phone {
+      @include centered;
+
+      margin-right: 40px;
+      width: 30%;
+
+      &_phone01 {
+        height: auto;
+
+        .phone-image {
+          @include image-fit;
+        }
+      }
+    }
+  }
 }
 
-@media (min-width:900px){
-    .hero{
-        background-size: 100%;
-        &__text{ 
-            margin-left: 60px;
-            .award{
-                width: 330px;
-                font-size: $paragraf-font-size;
-            }
-            .best-app{
-                @include centered; 
-            }
-            .text__links{
-                @include flex-basic;
-                flex-direction: row;
-                max-width: 400px;
-                margin-right: 0%;
-                .text__links_button{        //button hero "Try it for free 
-                    width: 200px;
-                    padding-top: 15px;
-                    padding-bottom: 15px;
-                    margin-bottom: 25px;
-                }
-            }
+@media (min-width: 900px) {
+  .hero {
+    background-size: 100%;
+
+    &__text {
+      margin-left: 60px;
+
+      .award {
+        width: 330px;
+        font-size: $paragraph-font-size;
+      }
+
+      .best-app {
+        @include centered;
+      }
+
+      .text__links {
+        @include flex-basic;
+
+        flex-direction: row;
+        max-width: 400px;
+        margin-right: 0%;
+
+        .text__links_button {
+          //button hero "Try it for free
+          width: 200px;
+          padding-top: 15px;
+          padding-bottom: 15px;
+          margin-bottom: 25px;
         }
-        &__phone{
-            margin-right: 60px; 
-            &_phone01{  
-                margin-bottom: 50px;
-            }
-        }
-    }    
-}
-@media (min-width: 1170px){
-    .hero{
-        background-size: 100%;
-        margin-top: 20px;
-        &__text{ 
-            width: 45%;
-            margin-top: 120px;
-            margin-left: 130px;
-        }
-        &__phone{
-            @include centered;
-            width: 27%;
-            margin-right: 165px;
-        }
+      }
     }
+
+    &__phone {
+      margin-right: 60px;
+
+      &_phone01 {
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1170px) {
+  .hero {
+    background-size: 100%;
+    margin-top: 20px;
+
+    &__text {
+      width: 45%;
+      margin-top: 120px;
+      margin-left: 130px;
+    }
+
+    &__phone {
+      @include centered;
+			
+      width: 27%;
+      margin-right: 165px;
+    }
+  }
 }

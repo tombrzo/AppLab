@@ -1,5 +1,5 @@
 const headerSideNavBar = function showAndHideSideNavigation() {
-  const headerOpenBtn = document.querySelector('.header__openbtn');
+  const headerOpenBtn = document.querySelector('.header__open-btn');
 
   function openNav() {
     document.querySelector('.header__sidebar').style.width = '250px';
@@ -7,7 +7,7 @@ const headerSideNavBar = function showAndHideSideNavigation() {
   }
   headerOpenBtn.addEventListener('click', openNav);
 
-  const closebtn = document.querySelector('.closebtn');
+  const closebtn = document.querySelector('.close-btn');
 
   function closeNav() {
     document.querySelector('.header__sidebar').style.width = '0';

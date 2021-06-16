@@ -1,18 +1,21 @@
 @media (max-width: 620px) {
   .features {
     @include centered;
+
     flex-direction: column;
     margin-top: 20px;
     margin-left: 10px;
 
     .features__left {
       @include centered;
+
       max-width: 100%;
       position: relative;
 
       .picture {
-        max-width: 100%;
         @include flex-primary;
+
+        max-width: 100%;
         flex-direction: column;
         padding-top: 55px;
         padding-bottom: 55px;
@@ -31,6 +34,7 @@
 
     .features__right {
       @include centered;
+
       margin: 50px 15px 0 15px;
       box-sizing: border-box;
 
@@ -48,6 +52,7 @@
 
       .wrapper_right {
         @include flex-primary;
+
         flex-direction: column;
 
         .box {
@@ -55,6 +60,7 @@
 
           .icon-red {
             @include box-icon;
+
             background-color: $icon-red-bg;
           }
 
@@ -62,13 +68,15 @@
             @include box-content;
 
             .box__header_red {
-              color: $red;
               @include box-header;
+
+              color: $red;
             }
           }
 
           .icon-blue {
             @include box-icon;
+
             background-color: $icon-blue-bg;
           }
 
@@ -76,13 +84,15 @@
             @include box-content;
 
             .box__header_blue {
-              color: $secondary-color;
               @include box-header;
+
+              color: $secondary-color;
             }
           }
 
           .icon-green {
             @include box-icon;
+
             background-color: $icon-green-bg;
           }
 
@@ -90,8 +100,9 @@
             @include box-content;
 
             .box__header_green {
-              color: $green;
               @include box-header;
+
+              color: $green;
             }
           }
         }
@@ -104,6 +115,7 @@
   .features {
     @include centered;
     @include flex-primary;
+
     flex-direction: column;
     margin-top: 50px;
 
@@ -111,13 +123,12 @@
       position: relative;
 
       .picture {
+        @include flex-primary;
+
         max-width: 900px;
         height: auto;
-        @include flex-primary;
         padding-top: 55px;
         padding-bottom: 55px;
-
-        .ellipse {}
 
         .phone-smart {
           max-width: 65%;
@@ -129,9 +140,10 @@
     }
 
     .features__right {
-      max-width: 550px;
       @include centered;
-      margin: 50px 0px 0px;
+
+      max-width: 550px;
+      margin: 50px 0 0;
 
       .features__title {
         color: $accent;
@@ -149,6 +161,7 @@
 
       .wrapper_right {
         @include flex-primary;
+
         flex-direction: column;
         padding-left: 10px;
 
@@ -157,6 +170,7 @@
 
           .icon-red {
             @include box-icon;
+
             background-color: $icon-red-bg;
           }
 
@@ -164,13 +178,15 @@
             @include box-content;
 
             .box__header_red {
-              color: $red;
               @include box-header;
+
+              color: $red;
             }
           }
 
           .icon-blue {
             @include box-icon;
+
             background-color: $icon-blue-bg;
           }
 
@@ -178,13 +194,15 @@
             @include box-content;
 
             .box__header_blue {
-              color: $secondary-color;
               @include box-header;
+
+              color: $secondary-color;
             }
           }
 
           .icon-green {
             @include box-icon;
+
             background-color: $icon-green-bg;
           }
 
@@ -192,8 +210,9 @@
             @include box-content;
 
             .box__header_green {
-              color: $green;
               @include box-header;
+
+              color: $green;
             }
           }
         }
@@ -202,10 +221,11 @@
   }
 }
 
-@media (min-width:900px) {
+@media (min-width: 900px) {
   .features {
     @include centered;
     @include flex-primary;
+
     flex-direction: row;
 
     .features__left {
@@ -213,9 +233,10 @@
       transform: translateX(-30px);
 
       .picture {
+        @include flex-primary;
+
         max-width: 100%;
         height: auto;
-        @include flex-primary;
 
         .ellipse {
           max-width: 100%;
@@ -232,10 +253,8 @@
 
     .features__right {
       width: 450px;
-      margin: 50px 0px 0px 10px;
+      margin: 50px 0 0 10px;
       padding-right: 10px;
-
-      .features__title {}
 
       .features__subtitle {
         margin-bottom: 70px;
@@ -253,7 +272,7 @@
   }
 }
 
-@media (min-width:1170px) {
+@media (min-width: 1170px) {
   .features {
     .features__left {
       width: 550px;

@@ -34,7 +34,7 @@ const js = {
 
 // Style loaders
 const styleLoader = {
-  loader: 'style-loader',
+  loader: 'style-loader'
 };
 
 const cssLoader = {
@@ -48,7 +48,6 @@ const postcssLoader = {
   loader: 'postcss-loader',
   options: {
     plugins: [
-      // eslint-disable-next-line global-require
       require('autoprefixer')(),
     ],
     sourceMap,
@@ -116,7 +115,7 @@ const imageLoader = {
 };
 
 const images = {
-  test: /\.(gif|png|jpe?g|svg)$/i,
+  test: /\.(gif|png|jpe?g|webp|svg)$/i,
   exclude: /fonts/,
   use: [
     'file-loader?name=images/[name].[hash].[ext]',

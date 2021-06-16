@@ -1,7 +1,3 @@
 {
-		"git.ignoreLimitWarning": true,
-		"cSpell.words": [
-			"feeback",
-			"paragraf"
-		]
+	"git.ignoreLimitWarning": true
 }

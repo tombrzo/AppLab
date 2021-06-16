@@ -1,3 +1,5 @@
+@import "_variables.scss";
+
 @media (max-width: 620px) {
   .header {
     box-shadow: $border-shadow;
@@ -5,6 +7,7 @@
 
     .header__nav {
       @include flex-basic;
+
       transition: 0.3s;
       padding: 10px;
       flex-wrap: nowrap;
@@ -32,7 +35,7 @@
           }
 
           .list__link a {
-            padding: 0px 8px 8px px;
+            padding: 0 8px 8px px;
             text-decoration: none;
             color: $accent;
             display: block;
@@ -44,7 +47,7 @@
           }
         }
 
-        .closebtn {
+        .close-btn {
           position: absolute;
           top: 0;
           right: 25px;
@@ -57,28 +60,27 @@
         }
       }
 
-      .header__openbtn {
+      .header__open-btn {
         @include open-button;
 
         &:hover {
-          color: #999999;
+          color: #999;
         }
       }
     }
   }
 }
 
-
-@media (min-width:621px) {
-
+@media (min-width: 621px) {
   .header {
-    padding: 0px 30px 0px 30px;
+    padding: 0 30px 0 30px;
     box-shadow: $border-shadow;
     $header-color: #e1e1e1;
 
     .header__nav {
       transition: 0.3s;
       padding: 10px;
+
       @include flex-basic;
 
       .header__logo {
@@ -93,11 +95,11 @@
 
       .header__sidebar {
         height: 100%;
-        width: 0px;
+        width: 0;
         position: fixed;
         z-index: 1;
         top: 0;
-        right: 0px;
+        right: 0;
         background-color: rgb(239, 239, 239);
         overflow: hidden;
         transition: none;
@@ -113,7 +115,7 @@
           }
 
           .list__link a {
-            padding: 0px 8px 8px px;
+            padding: 0 8px 8px 0;
             text-decoration: none;
             color: $accent;
             display: block;
@@ -125,7 +127,7 @@
           }
         }
 
-        .closebtn {
+        .close-btn {
           position: absolute;
           top: 0;
           right: 25px;
@@ -134,56 +136,56 @@
         }
 
         .free-button {
-          @include blue-button
+          @include blue-button;
         }
       }
 
-      .header__openbtn {
+      .header__open-btn {
         @include open-button;
 
         &:hover {
-          color: #666666;
+          color: #666;
         }
       }
     }
   }
 }
 
-
-@media (min-width:900px) {
-
+@media (min-width: 900px) {
   .header {
     padding: 10px 0 10px 0;
-    border: none;
-    box-shadow: none;
 
     .header__nav {
-      padding: 16px 30px;
+      padding: 16px 25px;
       transition: none;
 
       .header__sidebar {
-        height: 50px; //
+        height: 50px;
         min-width: 700px;
         background-color: $white;
-        @include flex-basic;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
         position: relative;
         transition: none;
-        padding: 0px;
+        padding: 0;
+        margin: 0;
 
         .list {
           font-size: 16px;
+
           @include flex-basic;
+
           padding-left: 0;
           padding-right: 0;
-          margin-left: 90px;
+          margin: 0;
 
           .list__link {
-            margin: 0 20px 0px 0px;
+            margin: 0 20px;
           }
 
           .list__link a {
             padding: 0;
-
           }
 
           .list__link:first-child {
@@ -193,7 +195,9 @@
 
         .free-button {
           @include blue-button;
-          margin-top: 0px;
+
+          margin-top: 0;
+          margin-left: 10px;
         }
 
         .free-button:hover {
@@ -201,19 +205,16 @@
         }
       }
 
-      .header__openbtn {
+      .header__open-btn {
         display: none;
       }
     }
   }
 }
 
-@media (min-width:1170px) {
-
+@media (min-width: 1170px) {
   .header {
-    padding: 10px 80px 10px 80px;
-    border: none;
-    box-shadow: none;
+    padding: 10px 50px 10px 50px;
 
     .header__nav {
       transition: none;
@@ -221,11 +222,12 @@
 
       .header__sidebar {
         min-width: 780px;
+        justify-content: space-between;
         transition: none;
 
         .list {
           font-size: 18px;
-          margin-left: 0px;
+          margin-left: 0;
 
           .list__link {
             margin: 0 40px 0 0;

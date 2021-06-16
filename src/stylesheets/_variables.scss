@@ -1,36 +1,34 @@
-$body-font: Poppins,
-sans-serif;
-$title-font-size:30px;
-$title-font-weight:600;
-$paragraf-font-size: 16px;
+$body-font: Poppins,sans-serif;
+$paragraph-font-size: 16px;
+$box-header-size: 20px;
+$body-color: #616368;
+$header-color: #e1e1e1;
+$header-span-color: #feaa25;
+$accent: #242f51;
+$white: #fff;
+$primary-color: #2500f9;
+$shadow-color: #9f9f9f;
+$border-shadow:0 1px 3px 1px rgba(0, 0, 0, 0.1);
+$hover-color: #0200c6;
+$award-color:#e2eaed;
 $hero-heading-size: 60px;
 $hero-heading-sizeSM: 40px;
 $hero-subtitle-size: 18px;
-$box-header-size: 20px;
-$body-color: #616368;
-$primary-color: #2500f9;
-$secondary-color: #2563ff;
-$hover-color:#0200c6;
-$white: #fff;
-$black: #000;
-$accent: #242f51;
-$green: #40975f;
-$red: #f55767;
-$orange:#fff6d3;
-$gray:#f4f4ff;
-$redlight:#fdeee4;
-$award-color:#e2eaed;
-$header-color: #e1e1e1;
-$border-color: #f4f4f4;
-$shadow_color: #9f9f9f;
-$border-shadow:0px 0px 20px $shadow-color;
-$header-span-color: #feaa25;
+$title-font-size:30px;
+$title-font-weight:600;
 $icon-red-bg: #ffecef;
 $icon-redlight-bg:#fdeee4;
 $icon-blue-bg:#eaf9ff;
 $icon-green-bg:#e4ffee;
 $icon-orange-bg:#fff6d3;
 $icon-gray-bg:#f4f4ff;
+$secondary-color: #2563ff;
+$red: #f55767;
+$green: #40975f;
+$orange:#fff6d3;
+$gray:#f4f4ff;
+$redlight:#fdeee4;
+$border-color: #f4f4f4;
 $planning-list-color:#b1b1b3;
 
 @mixin centered {
@@ -45,11 +43,16 @@ $planning-list-color:#b1b1b3;
   flex-wrap: wrap;
 }
 
-@mixin flex-primary {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+@mixin sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgb(239, 239, 239);
+  overflow: hidden;
+  padding-top: 70px;
 }
 
 @mixin blue-button {
@@ -68,6 +71,16 @@ $planning-list-color:#b1b1b3;
   text-align: center;
 }
 
+@mixin open-button {
+  font-size: 30px;
+  cursor: pointer;
+  background-color: transparent;
+  color: black;
+  padding: 10px 15px;
+  outline: none;
+  border: none;
+}
+
 @mixin button {
   color: $white;
   background-color: $primary-color;
@@ -79,44 +92,31 @@ $planning-list-color:#b1b1b3;
   cursor: pointer;
 }
 
-@mixin open-button {
-  font-size: 30px;
-  cursor: pointer;
-  background-color: transparent;
-  color: black;
-  padding: 10px 15px;
-  outline: none;
-  border: none;
-}
-
-@mixin sidebar {
-  height: 100%;
-  width: 0px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  right: 0px;
-  background-color: rgb(239, 239, 239);
-  overflow: hidden;
-  padding-top: 70px;
-}
-
 @mixin image-fit {
   max-width: 100%;
   object-fit: cover;
 }
 
+@mixin flex-primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 @mixin box {
   @include flex-primary;
+
   justify-content: flex-start;
   flex-wrap: nowrap;
   margin-bottom: 40px;
 }
 
 @mixin box-icon {
+  @include flex-primary;
+
   min-width: 90px;
   min-height: 90px;
-  @include flex-primary;
   border-radius: 50px;
 }
 
@@ -130,9 +130,15 @@ $planning-list-color:#b1b1b3;
 
 @mixin box-header {
   @include centered;
+
   font-weight: 600;
   font-size: $box-header-size;
   padding-bottom: 8px;
+}
+
+@mixin margin-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @mixin block-box {
@@ -140,7 +146,6 @@ $planning-list-color:#b1b1b3;
   box-sizing: border-box;
 }
 
-/* for switch in section planning */
 @mixin month-year {
   position: absolute;
   top: 50%;
@@ -151,9 +156,4 @@ $planning-list-color:#b1b1b3;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin-left: 188px;
   z-index: 1;
-}
-
-@mixin margin-auto {
-  margin-left: auto;
-  margin-right: auto;
 }

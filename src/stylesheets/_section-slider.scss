@@ -1,12 +1,12 @@
 @media (max-width: 620px) {
   .slider {
+    @include centered;
+
     max-width: 100%;
     height: auto;
-    @include centered;
     margin-top: 50px;
     margin-bottom: 50px;
-    border-bottom: 2px solid $shadow_color;
-    box-shadow: 0 5px 5px -2px $shadow_color;
+    box-shadow: $border-shadow;
 
     .slider__container {
       max-width: 100%;
@@ -34,6 +34,7 @@
       .slider__container_content {
         @include flex-primary;
         @include block-box;
+
         flex-direction: column;
         max-width: 100%;
         padding: 0 30px 50px 30px;
@@ -41,6 +42,7 @@
         .content-tex {
           .title {
             @include block-box;
+
             font-size: $title-font-size;
             font-weight: $title-font-weight;
             color: $accent;
@@ -50,7 +52,8 @@
 
           .text {
             @include block-box;
-            font-size: $paragraf-font-size;
+
+            font-size: $paragraph-font-size;
             color: $body-color;
             line-height: 140%;
             margin-bottom: 40px;
@@ -59,33 +62,35 @@
         }
 
         .content-slider {
+          @include flex-primary;
+
           max-width: 90%;
           height: auto;
           margin: 30px auto 0 auto;
           background-color: $white;
           position: relative;
-          @include flex-primary;
 
           .slider-slider {
             max-width: 100%;
             height: auto;
 
-            .slick-prev:before {
+            .slick-prev::before {
               color: $body-color;
               position: absolute;
-              top: 0px;
+              top: 0;
               left: -15px;
             }
 
-            .slick-next:before {
+            .slick-next::before {
               color: $body-color;
               position: absolute;
-              top: 0px;
+              top: 0;
               right: -15px;
             }
 
             .feedback {
               @include flex-primary;
+
               align-items: flex-start;
               flex-direction: column;
               color: $body-color;
@@ -111,7 +116,7 @@
               }
 
               .feedback_text {
-                font-size: $paragraf-font-size;
+                font-size: $paragraph-font-size;
                 font-weight: normal;
                 font-family: $body-font;
                 margin-bottom: 60px;
@@ -150,27 +155,29 @@
 
 @media (min-width: 621px) {
   .slider {
+    @include centered;
+
     max-width: 100%;
     height: auto;
-    @include centered;
     margin-top: 50px;
     margin-bottom: 50px;
-    border-bottom: 2px solid $shadow_color;
-    box-shadow: 0 5px 5px -2px $shadow_color;
+    box-shadow: $border-shadow;
 
     .slider__container {
-      max-width: 100%;
-      height: auto;
       @include margin-auto;
 
+      max-width: 100%;
+      height: auto;
+
       .slider__container_map {
+        @include margin-auto;
+
         max-width: 621px;
         height: auto;
         padding-left: 15px;
         padding-right: 15px;
         display: block;
         box-sizing: border-box;
-        @include margin-auto;
 
         .map-image {
           max-width: 100%;
@@ -181,16 +188,18 @@
       }
 
       .slider__container_content {
-        width: 620px;
         @include flex-primary;
         @include block-box;
+        @include margin-auto;
+
+        width: 620px;
         flex-direction: column;
         padding: 0 5px 70px 5px;
-        @include margin-auto;
 
         .content-tex {
           .title {
             @include block-box;
+
             font-size: $title-font-size;
             font-weight: $title-font-weight;
             color: $accent;
@@ -201,7 +210,8 @@
 
           .text {
             @include block-box;
-            font-size: $paragraf-font-size;
+
+            font-size: $paragraph-font-size;
             color: $body-color;
             line-height: 140%;
             margin-bottom: 40px;
@@ -211,25 +221,26 @@
         }
 
         .content-slider {
+          @include flex-primary;
+
           width: 600px;
           height: auto;
           margin: 30px auto 0 auto;
           background-color: $white;
           position: relative;
-          @include flex-primary;
 
           .slider-slider {
             max-width: 100%;
             height: auto;
 
-            .slick-prev:before {
+            .slick-prev::before {
               color: $body-color;
               position: absolute;
               top: 230px;
               left: 250px;
             }
 
-            .slick-next:before {
+            .slick-next::before {
               color: $body-color;
               position: absolute;
               top: 230px;
@@ -238,11 +249,12 @@
 
             .feedback {
               @include flex-primary;
+
               align-items: flex-start;
               flex-direction: column;
               color: $body-color;
               background-color: #fff;
-              padding: 0px;
+              padding: 0;
               text-align: left;
 
               .feeback_stars {
@@ -263,7 +275,7 @@
               }
 
               .feedback_text {
-                font-size: $paragraf-font-size;
+                font-size: $paragraph-font-size;
                 font-weight: normal;
                 font-family: $body-font;
                 margin-bottom: 60px;
@@ -304,15 +316,15 @@
   .slider {
     .slider__container {
       @include flex-primary;
+
       max-width: 900px;
       height: auto;
       position: relative;
 
-      //overflow: hidden;
       .slider__container_map {
         width: 400px;
-        padding-left: 0px;
-        padding-right: 0px;
+        padding-left: 0;
+        padding-right: 0;
 
         .map-image {
           position: absolute;
@@ -322,17 +334,18 @@
       }
 
       .slider__container_content {
+        @include margin-auto;
+
         width: 490px;
         padding: 0 0 70px 0;
-        @include margin-auto;
 
         .content-tex {
           .title {
-            padding-left: 0px;
+            padding-left: 0;
           }
 
           .text {
-            padding-left: 0px;
+            padding-left: 0;
           }
         }
 
@@ -340,12 +353,12 @@
           width: 480px;
 
           .slider-slider {
-            .slick-prev:before {
+            .slick-prev::before {
               top: 250px;
               left: 200px;
             }
 
-            .slick-next:before {
+            .slick-next::before {
               top: 250px;
               right: 200px;
             }
@@ -360,15 +373,15 @@
   .slider {
     .slider__container {
       @include flex-primary;
+
       max-width: 1170px;
       height: auto;
       position: relative;
 
-      //overflow: hidden;
       .slider__container_map {
         width: 570px;
-        padding-left: 0px;
-        padding-right: 0px;
+        padding-left: 0;
+        padding-right: 0;
 
         .map-image {
           position: absolute;
@@ -378,17 +391,18 @@
       }
 
       .slider__container_content {
+        @include margin-auto;
+
         width: 580px;
         padding: 0 0 70px 20px;
-        @include margin-auto;
 
         .content-tex {
           .title {
-            padding-left: 0px;
+            padding-left: 0;
           }
 
           .text {
-            padding-left: 0px;
+            padding-left: 0;
           }
         }
 
@@ -396,12 +410,12 @@
           width: 560px;
 
           .slider-slider {
-            .slick-prev:before {
+            .slick-prev::before {
               top: 230px;
               left: 250px;
             }
 
-            .slick-next:before {
+            .slick-next::before {
               top: 230px;
               right: 250px;
             }

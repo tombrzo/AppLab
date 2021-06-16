@@ -1,54 +1,24 @@
 @import "_variables.scss";
+
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
-    font-size: 16px;
-    font-family: $body-font;
-    @include centered;
+  @include centered;
+
+  font-size: 16px;
+  font-family: $body-font;
 }
+
 .wrapper {
-    @include centered;
-    
+  @include centered;
+
+  max-width: 1650px;
+  overflow: hidden;
+  margin: 0 auto;
 }
-
-/* header start*/
-/* headet end*/
-
-/* section-hero         - start */
-/* section-hero         - end */
-
-/* section-trusted      - start */
-/* section-trusted      - end */
-
-/* section-features     - start */
-/* section-features     - end */
-
-/* section-jackpots     - start */
-/* section-jackpots     - end*/
-
-/* section-desined      - start */
-/* section-desined      - end */
-
-/* section- why-choose  - start */
-/* section- why-choose  - end */
-
-/* section- we-built    - start */
-/* section- we-built    - end */
-
-/* section-planning     - start */
-/* section-planning     - end */
-
-/* section-slider       - start */
-/* section-slider       - end */
-
-/* section-slider       - start */ 
-/* section-slider       - end */ 
-
-/* section-download       - start */ 
-/* section-download       - end */ 
-
-/* footer                 - start*/
-/* footer                 - end*/
-

@@ -1,28 +1,19 @@
-const blueButton = function showBlueButton() {
-  const goTopButton = document.querySelector('.goTopBtn');
-  const topBarHeight = 200;
+const goTopButton = () => {
+  const goTopBtn = document.querySelector('.goTopBtn');
 
-  const showButtonOnScrollDown = function showButtonOnScrollDownUnderHeight(heightInPixels) {
-    if (
-      document.body.scrollTop > heightInPixels
-          || document.documentElement.scrollTop > heightInPixels
-    ) {
-      goTopButton.style.display = 'block';
+  window.addEventListener('scroll', () => {
+    if (document.body.scrollTop > 860) {
+      goTopBtn.style.display = 'block';
     } else {
-      goTopButton.style.display = 'none';
+      goTopBtn.style.display = 'none';
     }
-  };
+  });
 
-  window.onscroll = function onScroll() {
-    showButtonOnScrollDown(topBarHeight);
-  };
-
-  function topFunction() {
+  goTopBtn.addEventListener('click', () => {
+    // window.scrollTo(0, 0);
     document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
-
-  goTopButton.addEventListener('click', topFunction);
+    goTopBtn.style.display = 'none';
+  });
 };
 
-export default blueButton;
+export default goTopButton;

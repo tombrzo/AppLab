@@ -1,9 +1,10 @@
-import accordion from './accordion';
-import blueButton from './goTopButton';
 import headerSideNavBar from './headerNavBar';
 import slider from './slider';
+import accordion from './accordion';
+import goTopButton from './goTopButton';
 
-blueButton();
-accordion();
+
 headerSideNavBar();
 slider();
+accordion();
+goTopButton();

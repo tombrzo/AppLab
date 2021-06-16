@@ -12,7 +12,7 @@ ftpDeploy.deploy({
   password: 'password',
 
   // FTP Host
-  host: 'ftp.github.com/tombrzo/AppLab.git/',
+  host: 'ftp.yourwebsite.com',
 
   // FTP Port
   port: 21,

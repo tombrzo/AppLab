@@ -1,15 +1,16 @@
 @media (max-width: 620px) {
   .planning {
-    //padding-top: 60px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
 
     .planning__container {
       @include block-box;
+
       max-width: 620px;
       padding: 0 15px 80px 0;
 
       .planning__container-text {
         @include block-box;
+
         margin-left: auto;
         margin-right: auto;
 
@@ -22,7 +23,7 @@
         }
 
         .subtitle {
-          font-size: $paragraf-font-size;
+          font-size: $paragraph-font-size;
           font-weight: normal;
           color: $body-color;
           text-align: center !important;
@@ -72,45 +73,46 @@
 
           .month {
             @include month-year;
+
             margin-left: 40px;
             color: white;
           }
         }
 
-        #checkbox:checked+.planning-button .switch {
+        #checkbox:checked + .planning-button .switch {
           left: 157px;
           z-index: 1;
         }
 
-        #checkbox:checked+.planning-button .year {
+        #checkbox:checked + .planning-button .year {
           color: white;
           transition-delay: 0.3s;
         }
 
-        #checkbox:checked+.planning-button .month {
+        #checkbox:checked + .planning-button .month {
           color: #666;
           transition-delay: 0.3s;
         }
 
-        #checkbox:not(:checked)+.planning-button .month {
+        #checkbox:not(:checked) + .planning-button .month {
           transition-delay: 0.3s;
         }
 
-        #checkbox:checked~.left-card {
-          transform: rotatey(180deg);
+        #checkbox:checked ~ .left-card {
+          transform: rotateY(180deg);
           transition: 1s;
         }
 
-        #checkbox:not(:checked)~.left-card {
+        #checkbox:not(:checked) ~ .left-card {
           transition: 1s;
         }
 
-        #checkbox:checked~.right-card {
-          transform: rotatey(180deg);
+        #checkbox:checked ~ .right-card {
+          transform: rotateY(180deg);
           transition: 1s;
         }
 
-        #checkbox:not(:checked)~.right-card {
+        #checkbox:not(:checked) ~ .right-card {
           transition: 1s;
         }
 
@@ -121,7 +123,7 @@
           transform-style: preserve-3d;
           margin-top: 40px;
           padding-bottom: 60px;
-          box-shadow: 4px 70px 62px 0 rgba(144, 163, 177, .18);
+          box-shadow: 4px 70px 62px 0 rgba(144, 163, 177, 0.18);
 
           .left-card__front {
             width: 100%;
@@ -131,6 +133,7 @@
 
             .left-front__container {
               @include centered;
+
               max-width: 620px;
               text-align: center;
               color: $planning-list-color;
@@ -139,6 +142,7 @@
 
               .left-front__container_header {
                 @include flex-primary;
+
                 max-width: 100%;
                 flex-direction: column;
                 padding-bottom: 50px;
@@ -176,6 +180,7 @@
 
               .left-front__container_button {
                 @include blue-button;
+
                 width: 175px;
                 height: 65px;
               }
@@ -194,11 +199,12 @@
             text-align: center;
             top: 0;
             left: 0;
-            transform: rotatey(180deg);
+            transform: rotateY(180deg);
             backface-visibility: hidden;
 
             .left-back__container {
               @include centered;
+
               max-width: 620px;
               text-align: center;
               color: $planning-list-color;
@@ -206,8 +212,9 @@
               box-sizing: border-box;
 
               .left-back__container_header {
-                max-width: 100%;
                 @include flex-primary;
+
+                max-width: 100%;
                 flex-direction: column;
                 padding-bottom: 50px;
                 background: linear-gradient(0deg, #f4f7f9, rgba(244, 247, 249, 0) 50%);
@@ -244,6 +251,7 @@
 
               .left-front__container_button {
                 @include blue-button;
+
                 width: 175px;
                 height: 65px;
               }
@@ -262,7 +270,7 @@
           background-color: $white;
           transform-style: preserve-3d;
           margin-top: 20px;
-          box-shadow: 4px 70px 62px 0 rgba(144, 163, 177, .18);
+          box-shadow: 4px 70px 62px 0 rgba(144, 163, 177, 0.18);
 
           .right-card__front {
             width: 100%;
@@ -271,6 +279,7 @@
 
             .right-front__container {
               @include centered;
+
               max-width: 620px;
               text-align: center;
               color: $planning-list-color;
@@ -278,13 +287,14 @@
               box-sizing: border-box;
 
               .right-front__container_header {
-                max-width: 100%;
                 @include flex-primary;
+
+                max-width: 100%;
                 flex-direction: column;
                 padding-top: 50px;
                 padding-bottom: 50px;
-                box-shadow: -4px 70px 62px 0 rgba(144, 163, 177, .18);
-                background: linear-gradient(0deg, #f4f7f9, rgba(244, 247, 249, .3));
+                box-shadow: -4px 70px 62px 0 rgba(144, 163, 177, 0.18);
+                background: linear-gradient(0deg, #f4f7f9, rgba(244, 247, 249, 0.3));
 
                 .dolars {
                   font-size: $hero-heading-sizeSM;
@@ -318,6 +328,7 @@
 
               .right-front__container_button {
                 @include blue-button;
+
                 width: 175px;
                 height: 65px;
                 margin-bottom: 40px;
@@ -340,12 +351,13 @@
             background-color: $white;
             top: 0;
             left: 0;
-            transform: rotatey(180deg);
+            transform: rotateY(180deg);
             backface-visibility: hidden;
           }
 
           .right-back__container {
             @include centered;
+
             max-width: 620px;
             text-align: center;
             color: $planning-list-color;
@@ -353,13 +365,14 @@
             box-sizing: border-box;
 
             .right-back__container_header {
-              max-width: 100%;
               @include flex-primary;
+
+              max-width: 100%;
               flex-direction: column;
               padding-top: 50px;
               padding-bottom: 50px;
-              box-shadow: -4px 70px 62px 0 rgba(144, 163, 177, .18);
-              background: linear-gradient(0deg, #f4f7f9, rgba(244, 247, 249, .3));
+              box-shadow: -4px 70px 62px 0 rgba(62, 80, 94, 0.18);
+              background: linear-gradient(0deg, #f4f7f9, rgba(244, 247, 249, 0.3));
 
               .dolars {
                 font-size: $hero-heading-sizeSM;
@@ -393,6 +406,7 @@
 
             .right-back__container_button {
               @include blue-button;
+
               width: 175px;
               height: 65px;
               margin-bottom: 40px;
@@ -415,11 +429,11 @@
 
 @media (min-width: 621px) {
   .planning {
-    //padding-top: 60px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
 
     .planning__container {
       @include block-box;
+
       max-width: 620px;
       padding-left: 15px;
       padding-right: 15px;
@@ -427,6 +441,7 @@
 
       .planning__container-text {
         @include block-box;
+
         margin-left: auto;
         margin-right: auto;
 
@@ -439,7 +454,7 @@
         }
 
         .subtitle {
-          font-size: $paragraf-font-size;
+          font-size: $paragraph-font-size;
           font-weight: normal;
           color: $body-color;
           text-align: center !important;
@@ -486,45 +501,46 @@
 
           .month {
             @include month-year;
+
             margin-left: 40px;
             color: white;
           }
         }
 
-        #checkbox:checked+.planning-button .switch {
+        #checkbox:checked + .planning-button .switch {
           left: 157px;
           z-index: 1;
         }
 
-        #checkbox:checked+.planning-button .year {
+        #checkbox:checked + .planning-button .year {
           color: white;
           transition-delay: 0.3s;
         }
 
-        #checkbox:checked+.planning-button .month {
+        #checkbox:checked + .planning-button .month {
           color: #666;
           transition-delay: 0.3s;
         }
 
-        #checkbox:not(:checked)+.planning-button .month {
+        #checkbox:not(:checked) + .planning-button .month {
           transition-delay: 0.3s;
         }
 
-        #checkbox:checked~.left-card {
+        #checkbox:checked ~ .left-card {
           transform: rotateY(180deg);
           transition: 1s;
         }
 
-        #checkbox:not(:checked)~.left-card {
+        #checkbox:not(:checked) ~ .left-card {
           transition: 1s;
         }
 
-        #checkbox:checked~.right-card {
+        #checkbox:checked ~ .right-card {
           transform: rotateY(180deg);
           transition: 1s;
         }
 
-        #checkbox:not(:checked)~.right-card {
+        #checkbox:not(:checked) ~ .right-card {
           transition: 1s;
         }
 
@@ -537,10 +553,9 @@
           margin-top: 20px;
           padding-bottom: 75px;
           box-sizing: border-box;
-          box-shadow: 4px 70px 62px 0 rgba(144, 163, 177, .18);
+          box-shadow: 4px 70px 62px 0 rgba(107, 140, 163, 0.18);
 
           .left-card__front {
-            /* absolute? */
             width: 100%;
             background-color: $white;
             color: $body-color;
@@ -548,6 +563,7 @@
 
             .left-front__container {
               @include centered;
+
               max-width: 620px;
               text-align: center;
               color: $planning-list-color;
@@ -555,11 +571,12 @@
               box-sizing: border-box;
 
               .left-front__container_header {
-                max-width: 100%;
                 @include flex-primary;
+
+                max-width: 100%;
                 flex-direction: column;
                 padding-bottom: 50px;
-                box-shadow: -4px 70px 62px 0 rgba(144, 163, 177, .18);
+                box-shadow: -4px 70px 62px 0 rgba(144, 163, 177, 0.18);
                 background: linear-gradient(0deg, #f4f7f9, rgba(244, 247, 249, 0) 50%);
 
                 .dolars {
@@ -594,6 +611,7 @@
 
               .left-front__container_button {
                 @include blue-button;
+
                 width: 175px;
                 height: 65px;
                 margin-bottom: 22px;
@@ -613,11 +631,12 @@
             text-align: center;
             top: 0;
             left: 0;
-            transform: rotatey(180deg);
+            transform: rotateY(180deg);
             backface-visibility: hidden;
 
             .left-back__container {
               @include centered;
+
               max-width: 620px;
               text-align: center;
               color: $planning-list-color;
@@ -625,11 +644,12 @@
               box-sizing: border-box;
 
               .left-back__container_header {
-                max-width: 100%;
                 @include flex-primary;
+
+                max-width: 100%;
                 flex-direction: column;
                 padding-bottom: 50px;
-                box-shadow: -4px 70px 62px 0 rgba(144, 163, 177, .18);
+                box-shadow: -4px 70px 62px 0 rgba(144, 163, 177, 0.18);
                 background: linear-gradient(0deg, #f4f7f9, rgba(244, 247, 249, 0) 50%);
 
                 .dolars {
@@ -664,6 +684,7 @@
 
               .left-front__container_button {
                 @include blue-button;
+
                 width: 175px;
                 height: 65px;
               }
@@ -685,7 +706,7 @@
           margin-left: 2%;
           margin-right: 0;
           box-sizing: border-box;
-          box-shadow: 4px 70px 62px 0 rgba(144, 163, 177, .18);
+          box-shadow: 4px 70px 62px 0 rgba(144, 163, 177, 0.18);
 
           .right-card__front {
             /* absolute? */
@@ -695,6 +716,7 @@
 
             .right-front__container {
               @include centered;
+
               max-width: 620px;
               text-align: center;
               color: $planning-list-color;
@@ -702,12 +724,12 @@
               box-sizing: border-box;
 
               .right-front__container_header {
-                max-width: 100%;
                 @include flex-primary;
+
                 flex-direction: column;
                 padding-bottom: 50px;
-                box-shadow: -4px 70px 62px 0 rgba(144, 163, 177, .18);
-                background: linear-gradient(0deg, #f4f7f9, rgba(244, 247, 249, .3));
+                box-shadow: -4px 70px 62px 0 rgba(144, 163, 177, 0.18);
+                background: linear-gradient(0deg, #f4f7f9, rgba(244, 247, 249, 0.3));
 
                 .dolars {
                   font-size: $hero-heading-sizeSM;
@@ -741,6 +763,7 @@
 
               .right-front__container_button {
                 @include blue-button;
+
                 width: 175px;
                 height: 65px;
                 margin-bottom: 40px;
@@ -763,12 +786,13 @@
             background-color: $white;
             top: 0;
             left: 0;
-            transform: rotatey(180deg);
+            transform: rotateY(180deg);
             backface-visibility: hidden;
           }
 
           .right-back__container {
             @include centered;
+
             max-width: 620px;
             text-align: center;
             color: $planning-list-color;
@@ -776,12 +800,13 @@
             box-sizing: border-box;
 
             .right-back__container_header {
-              max-width: 100%;
               @include flex-primary;
+
+              max-width: 100%;
               flex-direction: column;
               padding-bottom: 50px;
-              box-shadow: -4px 70px 62px 0 rgba(144, 163, 177, .18);
-              background: linear-gradient(0deg, #f4f7f9, rgba(244, 247, 249, .3));
+              box-shadow: -4px 70px 62px 0 rgba(144, 163, 177, 0.18);
+              background: linear-gradient(0deg, #f4f7f9, rgba(244, 247, 249, 0.3));
 
               .dolars {
                 font-size: $hero-heading-sizeSM;
@@ -815,6 +840,7 @@
 
             .right-back__container_button {
               @include blue-button;
+
               width: 175px;
               height: 65px;
               margin-bottom: 40px;
@@ -837,16 +863,18 @@
 
 @media (min-width: 900px) {
   .planning {
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-top: 0;
+    padding-bottom: 0;
 
     .planning__container {
       @include block-box;
+
       max-width: 899px;
       margin: 0 auto;
 
       .planning__container-text {
         @include block-box;
+
         margin-left: auto;
         margin-right: auto;
 
@@ -859,7 +887,7 @@
         }
 
         .subtitle {
-          font-size: $paragraf-font-size;
+          font-size: $paragraph-font-size;
           font-weight: normal;
           color: $body-color;
           text-align: center !important;
@@ -905,45 +933,46 @@
 
           .month {
             @include month-year;
+
             margin-left: 40px;
             color: white;
           }
         }
 
-        #checkbox:checked+.planning-button .switch {
+        #checkbox:checked + .planning-button .switch {
           left: 157px;
           z-index: 1;
         }
 
-        #checkbox:checked+.planning-button .year {
+        #checkbox:checked + .planning-button .year {
           color: white;
           transition-delay: 0.3s;
         }
 
-        #checkbox:checked+.planning-button .month {
+        #checkbox:checked + .planning-button .month {
           color: #666;
           transition-delay: 0.3s;
         }
 
-        #checkbox:not(:checked)+.planning-button .month {
+        #checkbox:not(:checked) + .planning-button .month {
           transition-delay: 0.3s;
         }
 
-        #checkbox:checked~.left-card {
+        #checkbox:checked ~ .left-card {
           transform: rotateY(180deg);
           transition: 1s;
         }
 
-        #checkbox:not(:checked)~.left-card {
+        #checkbox:not(:checked) ~ .left-card {
           transition: 1s;
         }
 
-        #checkbox:checked~.right-card {
+        #checkbox:checked ~ .right-card {
           transform: rotateY(180deg);
           transition: 1s;
         }
 
-        #checkbox:not(:checked)~.right-card {
+        #checkbox:not(:checked) ~ .right-card {
           transition: 1s;
         }
 
@@ -956,10 +985,9 @@
           margin-top: 20px;
           padding-bottom: 75px;
           box-sizing: border-box;
-          box-shadow: 4px 70px 62px 0 rgba(144, 163, 177, .18);
+          box-shadow: 4px 70px 62px 0 rgba(144, 163, 177, 0.18);
 
           .left-card__front {
-            /* absolute? */
             width: 100%;
             background-color: $white;
             color: $body-color;
@@ -967,6 +995,7 @@
 
             .left-front__container {
               @include centered;
+
               max-width: 620px;
               text-align: center;
               color: $planning-list-color;
@@ -974,8 +1003,9 @@
               box-sizing: border-box;
 
               .left-front__container_header {
-                max-width: 100%;
                 @include flex-primary;
+
+                max-width: 100%;
                 flex-direction: column;
                 padding-bottom: 50px;
                 background: linear-gradient(0deg, #f4f7f9, rgba(244, 247, 249, 0) 50%);
@@ -1012,6 +1042,7 @@
 
               .left-front__container_button {
                 @include blue-button;
+
                 width: 250px;
                 height: 65px;
               }
@@ -1030,11 +1061,12 @@
             text-align: center;
             top: 0;
             left: 0;
-            transform: rotatey(180deg);
+            transform: rotateY(180deg);
             backface-visibility: hidden;
 
             .left-back__container {
               @include centered;
+
               max-width: 620px;
               text-align: center;
               color: $planning-list-color;
@@ -1042,8 +1074,9 @@
               box-sizing: border-box;
 
               .left-back__container_header {
-                max-width: 100%;
                 @include flex-primary;
+
+                max-width: 100%;
                 flex-direction: column;
                 padding-bottom: 50px;
                 background: linear-gradient(0deg, #f4f7f9, rgba(244, 247, 249, 0) 50%);
@@ -1080,6 +1113,7 @@
 
               .left-front__container_button {
                 @include blue-button;
+
                 width: 250px;
                 height: 65px;
               }
@@ -1101,16 +1135,16 @@
           margin-left: 2%;
           margin-right: 0;
           box-sizing: border-box;
-          box-shadow: 4px 70px 62px 0 rgba(144, 163, 177, .18);
+          box-shadow: 4px 70px 62px 0 rgba(144, 163, 177, 0.18);
 
           .right-card__front {
-            /* absolute? */
             width: 100%;
             background-color: $white;
             backface-visibility: hidden;
 
             .right-front__container {
               @include centered;
+
               max-width: 620px;
               text-align: center;
               color: $planning-list-color;
@@ -1118,12 +1152,13 @@
               box-sizing: border-box;
 
               .right-front__container_header {
-                max-width: 100%;
                 @include flex-primary;
+
+                max-width: 100%;
                 flex-direction: column;
                 padding-bottom: 50px;
-                box-shadow: -4px 70px 62px 0 rgba(144, 163, 177, .18);
-                background: linear-gradient(0deg, #f4f7f9, rgba(244, 247, 249, .3));
+                box-shadow: -4px 70px 62px 0 rgba(144, 163, 177, 0.18);
+                background: linear-gradient(0deg, #f4f7f9, rgba(244, 247, 249, 0.3));
 
                 .dolars {
                   font-size: $hero-heading-size;
@@ -1157,6 +1192,7 @@
 
               .right-front__container_button {
                 @include blue-button;
+
                 width: 250px;
                 height: 65px;
                 margin-bottom: 40px;
@@ -1179,12 +1215,13 @@
             background-color: $white;
             top: 0;
             left: 0;
-            transform: rotatey(180deg);
+            transform: rotateY(180deg);
             backface-visibility: hidden;
           }
 
           .right-back__container {
             @include centered;
+
             max-width: 620px;
             text-align: center;
             color: $planning-list-color;
@@ -1192,12 +1229,13 @@
             box-sizing: border-box;
 
             .right-back__container_header {
-              max-width: 100%;
               @include flex-primary;
+
+              max-width: 100%;
               flex-direction: column;
               padding-bottom: 50px;
-              box-shadow: -4px 70px 62px 0 rgba(144, 163, 177, .18);
-              background: linear-gradient(0deg, #f4f7f9, rgba(244, 247, 249, .3));
+              box-shadow: -4px 70px 62px 0 rgba(144, 163, 177, 0.18);
+              background: linear-gradient(0deg, #f4f7f9, rgba(244, 247, 249, 0.3));
 
               .dolars {
                 font-size: $hero-heading-size;
@@ -1231,6 +1269,7 @@
 
             .right-back__container_button {
               @include blue-button;
+
               width: 250px;
               height: 65px;
               margin: 10px 0 30px;
@@ -1253,16 +1292,18 @@
 
 @media (min-width: 1170px) {
   .planning {
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-top: 0;
+    padding-bottom: 0;
 
     .planning__container {
       @include block-box;
+
       max-width: 899px;
       margin: 0 auto;
 
       .planning__container-text {
         @include block-box;
+
         margin-left: auto;
         margin-right: auto;
 
@@ -1275,7 +1316,7 @@
         }
 
         .subtitle {
-          font-size: $paragraf-font-size;
+          font-size: $paragraph-font-size;
           font-weight: normal;
           color: $body-color;
           text-align: center !important;
@@ -1321,45 +1362,46 @@
 
           .month {
             @include month-year;
+
             margin-left: 40px;
             color: white;
           }
         }
 
-        #checkbox:checked+.planning-button .switch {
+        #checkbox:checked + .planning-button .switch {
           left: 157px;
           z-index: 1;
         }
 
-        #checkbox:checked+.planning-button .year {
+        #checkbox:checked + .planning-button .year {
           color: white;
           transition-delay: 0.3s;
         }
 
-        #checkbox:checked+.planning-button .month {
+        #checkbox:checked + .planning-button .month {
           color: #666;
           transition-delay: 0.3s;
         }
 
-        #checkbox:not(:checked)+.planning-button .month {
+        #checkbox:not(:checked) + .planning-button .month {
           transition-delay: 0.3s;
         }
 
-        #checkbox:checked~.left-card {
+        #checkbox:checked ~ .left-card {
           transform: rotateY(180deg);
           transition: 1s;
         }
 
-        #checkbox:not(:checked)~.left-card {
+        #checkbox:not(:checked) ~ .left-card {
           transition: 1s;
         }
 
-        #checkbox:checked~.right-card {
+        #checkbox:checked ~ .right-card {
           transform: rotateY(180deg);
           transition: 1s;
         }
 
-        #checkbox:not(:checked)~.right-card {
+        #checkbox:not(:checked) ~ .right-card {
           transition: 1s;
         }
 
@@ -1373,10 +1415,9 @@
           margin-left: 35px;
           padding-bottom: 75px;
           box-sizing: border-box;
-          box-shadow: 4px 70px 62px 0 rgba(144, 163, 177, .18);
+          box-shadow: 4px 70px 62px 0 rgba(144, 163, 177, 0.18);
 
           .left-card__front {
-            /* absolute? */
             width: 100%;
             background-color: $white;
             color: $body-color;
@@ -1384,6 +1425,7 @@
 
             .left-front__container {
               @include centered;
+
               max-width: 620px;
               text-align: center;
               color: $planning-list-color;
@@ -1391,8 +1433,9 @@
               box-sizing: border-box;
 
               .left-front__container_header {
-                max-width: 100%;
                 @include flex-primary;
+
+                max-width: 100%;
                 flex-direction: column;
                 padding-bottom: 50px;
                 background: linear-gradient(0deg, #f4f7f9, rgba(244, 247, 249, 0) 50%);
@@ -1429,6 +1472,7 @@
 
               .left-front__container_button {
                 @include blue-button;
+
                 width: 250px;
                 height: 65px;
               }
@@ -1447,11 +1491,12 @@
             text-align: center;
             top: 0;
             left: 0;
-            transform: rotatey(180deg);
+            transform: rotateY(180deg);
             backface-visibility: hidden;
 
             .left-back__container {
               @include centered;
+
               max-width: 620px;
               text-align: center;
               color: $planning-list-color;
@@ -1459,8 +1504,9 @@
               box-sizing: border-box;
 
               .left-back__container_header {
-                max-width: 100%;
                 @include flex-primary;
+
+                max-width: 100%;
                 flex-direction: column;
                 padding-bottom: 50px;
                 background: linear-gradient(0deg, #f4f7f9, rgba(244, 247, 249, 0) 50%);
@@ -1497,6 +1543,7 @@
 
               .left-front__container_button {
                 @include blue-button;
+
                 width: 250px;
                 height: 65px;
               }
@@ -1518,7 +1565,7 @@
           margin-left: 2%;
           margin-right: 0;
           box-sizing: border-box;
-          box-shadow: 4px 70px 62px 0 rgba(144, 163, 177, .18);
+          box-shadow: 4px 70px 62px 0 rgba(144, 163, 177, 0.18);
 
           .right-card__front {
             width: 100%;
@@ -1527,6 +1574,7 @@
 
             .right-front__container {
               @include centered;
+
               max-width: 620px;
               text-align: center;
               color: $planning-list-color;
@@ -1534,12 +1582,13 @@
               box-sizing: border-box;
 
               .right-front__container_header {
-                max-width: 100%;
                 @include flex-primary;
+
+                max-width: 100%;
                 flex-direction: column;
                 padding-bottom: 50px;
-                box-shadow: -4px 70px 62px 0 rgba(144, 163, 177, .18);
-                background: linear-gradient(0deg, #f4f7f9, rgba(244, 247, 249, .3));
+                box-shadow: -4px 70px 62px 0 rgba(144, 163, 177, 0.18);
+                background: linear-gradient(0deg, #f4f7f9, rgba(244, 247, 249, 0.3));
 
                 .dolars {
                   font-size: $hero-heading-size;
@@ -1573,6 +1622,7 @@
 
               .right-front__container_button {
                 @include blue-button;
+
                 width: 250px;
                 height: 65px;
                 margin: 38px 0 30px;
@@ -1595,12 +1645,13 @@
             background-color: $white;
             top: 0;
             left: 0;
-            transform: rotatey(180deg);
+            transform: rotateY(180deg);
             backface-visibility: hidden;
           }
 
           .right-back__container {
             @include centered;
+
             max-width: 620px;
             text-align: center;
             color: $planning-list-color;
@@ -1608,12 +1659,13 @@
             box-sizing: border-box;
 
             .right-back__container_header {
-              max-width: 100%;
               @include flex-primary;
+
+              max-width: 100%;
               flex-direction: column;
               padding-bottom: 50px;
-              box-shadow: -4px 70px 62px 0 rgba(144, 163, 177, .18);
-              background: linear-gradient(0deg, #f4f7f9, rgba(244, 247, 249, .3));
+              box-shadow: -4px 70px 62px 0 rgba(144, 163, 177, 0.18);
+              background: linear-gradient(0deg, #f4f7f9, rgba(244, 247, 249, 0.3));
 
               .dolars {
                 font-size: $hero-heading-size;
@@ -1647,6 +1699,7 @@
 
             .right-back__container_button {
               @include blue-button;
+
               width: 250px;
               height: 65px;
               margin: 38px 0 30px;

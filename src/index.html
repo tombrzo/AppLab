@@ -1,547 +1,604 @@
-<!DOCTYPE HTML>
 <html>
-  <Head>
-    <meta charset="utf-8">
-    <title>AppLab</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="landingpage, experience, exercise">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width initial scale=1">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./fontello/css/fontello.css">
-    <link rel="stylesheet" type="text/css" href="./slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
-    <script src="javascripts/jquery-3.5.1.min (1).js"></script>
-  </Head>
 
-  <body>
-    <button class="goTopBtn" ><svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" viewBox="-6 -6 36 36"><path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z" /></svg></button>
+<Head>
+	<meta charset="utf-8">
+	<title>AppLab</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="landing_page, experience, exercise">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width initial scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./fontello/css/fontello.css">
+	<link rel="stylesheet" type="text/css" href="./slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</Head>
 
-    <wrapper class="wrapper">
-      <header class="header" id="header">
-        <div class="header__nav">
-          <div class="header__logo"><span class="header__span">App</span>Lab</div>
+<body>
+	<button class="goTopBtn"><svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" viewBox="-6 -6 36 36">
+			<path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z" />
+		</svg></button>
+	<div class="wrapper">
+		<header class="header" id="header">
+			<div class="header__nav">
+				<div class="header__logo"><span class="header__span">App</span>Lab</div>
 
-          <div class="header__sidebar">
-            <ul class="list">
-              <li class="list__link"><a href="javascript:void(0)" class="closebtn">×</a></li>
-              <li class="list__link"><a href="" target="_blank">Home</a></li>
-              <li class="list__link"><a href="#features">Key Feature</a></li>
-              <li class="list__link"><a href="#pricing">Pricing</a></li>
-              <li class="list__link"><a href="#testimonial">Testimonial</a></li>
-              <li class="list__link"><a href="#faq">FAQ</a></li>
-            </ul>
-            <a href="" target="_blank"><button class="free-button">Try for free</button></a>
-          </div>
-          <button class="header__openbtn">☰ </button>
-        </div>
-      </header>
+				<div class="header__sidebar">
+					<ul class="list">
+						<li class="list__link"><a href="javascript:void(0)" class="close-btn">×</a></li>
+						<li class="list__link"><a href="" target="_blank">Home</a></li>
+						<li class="list__link"><a href="#features">Key Feature</a></li>
+						<li class="list__link"><a href="#pricing">Pricing</a></li>
+						<li class="list__link"><a href="#testimonial">Testimonial</a></li>
+						<li class="list__link"><a href="#faq">FAQ</a></li>
+					</ul>
+					<a href="" target="_blank"><button class="free-button">Try for free</button></a>
+				</div>
+				<button class="header__open-btn">☰ </button>
+			</div>
+		</header>
+		<main>
+			<section class="hero">
+				<div class="hero__text">
+					<div class="award">
+						<div class="award-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="-230 -230 990 990" class="svg" fill="#ffffff">
+								<path
+									d="M332.73 178.37c-3.85-3.88-10.11-3.9-13.98-.06l-87.36 86.66-37.88-38.19c-3.84-3.88-10.11-3.9-13.98-.06l-23.4 23.21c-3.88 3.85-3.9 10.11-.06 13.98l68.05 68.6c3.85 3.88 10.11 3.9 13.98.06l117.78-116.83c3.88-3.85 3.9-10.11.06-13.98l-23.21-23.39zM512 256c0-36.5-18.8-68.4-46.7-86.7 6.8-32.9-2.7-68.7-28.3-94.3-25.6-25.7-61.5-35.1-94.3-28.3C324.2 18.7 292.3 0 256 0s-68.3 18.7-86.7 46.7C136.4 39.9 100.6 49.4 75 75c-25.7 25.6-35.1 61.5-28.3 94.3C18.6 187.8 0 219.8 0 256c0 36.3 18.7 68.3 46.7 86.7-6.8 32.9 2.7 68.7 28.3 94.3 25.6 25.7 61.2 35.1 94.3 28.3 18.5 28.1 50.5 46.7 86.7 46.7 36.4 0 68.3-18.8 86.7-46.7 33.1 6.8 68.7-2.7 94.3-28.3 25.7-25.6 35.1-61.5 28.3-94.3 28.1-18.5 46.7-50.5 46.7-86.7zm-108.3 61.3c9.1 19.9 30.3 54.8-.7 85.8-28 28-55.3 14.5-85.8.7-7.7 20.6-17.3 60.2-61.2 60.2-45.3 0-54.7-42.8-61.2-60.2-21.1 9.6-54.9 30.2-85.9-.8-32-32-8.4-68.9-.7-85.8C87.6 309.5 48 299.9 48 256c0-45.3 42.8-54.7 60.3-61.3-9.1-19.9-30.3-54.8.7-85.8 32-32 68.9-8.4 85.8-.7C202.5 87.6 212.1 48 256 48c45.3 0 54.7 42.8 61.2 60.4 19.9-9.1 54.8-30.3 85.8.7 32 32 8.4 68.9.7 85.8 20.6 7.7 60.2 17.3 60.2 61.2 0 45.3-42.8 54.7-60.2 61.2z"
+									class=""></path>
+							</svg>
+						</div>
+						<div class="award-sentence">#1 Editors Choice App of 2020</div>
+					</div>
+					<div class="best-app">
+						<h1 class="best-app__title">Best app for your modern lifestyle</h1>
+						<p class="best-app__subtitle">Increase productivity with a simple to-do app. app for
+							managing your personal budgets.
+						</p>
+					</div>
+					<div class="text__links">
+						<a href="" class="text__links_button">Try it for free</a>
+						<a href="https://www.youtube.com/watch?v=wAuYr1IntQs&list=PLzdnOPI1iJNe1RFTghJhu1Zm7eB9O4UIo&index=1"
+							class="text__links_video" target="_blank"> Watch demo video</a>
+					</div>
+				</div>
+				<div class="hero__phone">
+					<div class="hero__phone_phone01">
+						<img src="images/screen01.svg" class="phone-image">
+					</div>
+				</div>
+			</section>
 
-      <main>
-        <section class="hero">
-          <div class="hero__text">
-            <div class="award">
-              <div class="award-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-230 -230 990 990" class="svg" fill="#ffffff"><path  d="M332.73 178.37c-3.85-3.88-10.11-3.9-13.98-.06l-87.36 86.66-37.88-38.19c-3.84-3.88-10.11-3.9-13.98-.06l-23.4 23.21c-3.88 3.85-3.9 10.11-.06 13.98l68.05 68.6c3.85 3.88 10.11 3.9 13.98.06l117.78-116.83c3.88-3.85 3.9-10.11.06-13.98l-23.21-23.39zM512 256c0-36.5-18.8-68.4-46.7-86.7 6.8-32.9-2.7-68.7-28.3-94.3-25.6-25.7-61.5-35.1-94.3-28.3C324.2 18.7 292.3 0 256 0s-68.3 18.7-86.7 46.7C136.4 39.9 100.6 49.4 75 75c-25.7 25.6-35.1 61.5-28.3 94.3C18.6 187.8 0 219.8 0 256c0 36.3 18.7 68.3 46.7 86.7-6.8 32.9 2.7 68.7 28.3 94.3 25.6 25.7 61.2 35.1 94.3 28.3 18.5 28.1 50.5 46.7 86.7 46.7 36.4 0 68.3-18.8 86.7-46.7 33.1 6.8 68.7-2.7 94.3-28.3 25.7-25.6 35.1-61.5 28.3-94.3 28.1-18.5 46.7-50.5 46.7-86.7zm-108.3 61.3c9.1 19.9 30.3 54.8-.7 85.8-28 28-55.3 14.5-85.8.7-7.7 20.6-17.3 60.2-61.2 60.2-45.3 0-54.7-42.8-61.2-60.2-21.1 9.6-54.9 30.2-85.9-.8-32-32-8.4-68.9-.7-85.8C87.6 309.5 48 299.9 48 256c0-45.3 42.8-54.7 60.3-61.3-9.1-19.9-30.3-54.8.7-85.8 32-32 68.9-8.4 85.8-.7C202.5 87.6 212.1 48 256 48c45.3 0 54.7 42.8 61.2 60.4 19.9-9.1 54.8-30.3 85.8.7 32 32 8.4 68.9.7 85.8 20.6 7.7 60.2 17.3 60.2 61.2 0 45.3-42.8 54.7-60.2 61.2z" class=""></path></svg>
-              </div>
-              <div class="award-sentence">#1 Editors Choice App of 2020</div>
-            </div>
-            <div class="best-app">
-              <h1 class="best-app__title">Best app for your modern lifestyle</h1>
-              <p class="best-app__subtitle">Increase productivity with a simple to-do app. app for
-              managing your personal budgets.
-              </p>
-            </div>
-            <div class="text__links">
-              <a href="" class="text__links_button">Try it for free</a>
-              <a href="https://www.youtube.com/watch?v=wAuYr1IntQs&list=PLzdnOPI1iJNe1RFTghJhu1Zm7eB9O4UIo&index=1" class="text__links_video"  target="_blank"> Watch demo video</a>
-            </div>
-          </div>
-          <div class="hero__phone">
-              <div class="hero__phone_phone01">
-                <img src="images/screen01.svg" class="phone-image">
-              </div>
-          </div>
-        </section>
+			<section class="trusted" id="testimonial">
+				<div class="trusted__container">
+					<p>Trusted by companies like
+					<p>
+					<div class="trusted__companies">
+						<div class="trusted__companies_logos"><img src="images/southwest.png" class="item"></div>
+						<div class="trusted__companies_logos"><img src="images/anubis.png" class="item"></div>
+						<div class="trusted__companies_logos"><img src="images/alonzo.png" class="item"></div>
+						<div class="trusted__companies_logos"><img src="images/express.png" class="item"></div>
+						<div class="trusted__companies_logos"><img src="images/maniac.png" class="item"></div>
+					</div>
+				</div>
+			</section>
 
-        <section class="trusted" id="testimonial">
-          <div class="trusted__container">
-            <p>Trusted by companies like<p>
-            <div class="trusted__companies">
-              <div class="trusted__companies_logos"><img src="images/southwest.png" class="item"></div>
-              <div class="trusted__companies_logos"><img src="images/anubis.png" class="item"></div>
-              <div class="trusted__companies_logos"><img src="images/alonzo.png" class="item"></div>
-              <div class="trusted__companies_logos"><img src="images/express.png" class="item"></div>
-              <div class="trusted__companies_logos"><img src="images/maniac.png" class="item"></div>
-            </div>
-          </div>
-        </section>
+			<section class="features" id="features">
+				<div class="features__left">
+					<div class="picture">
+						<img src="images/ellipse-1.png" class="ellipse">
+						<img src="images/phone-2.svg" class="phone-smart">
+					</div>
+				</div>
+				<div class="features__right">
+					<h2 class="features__title"> Awesome app </br>features</h2>
+					<p class="features__subtitle">Increase productivity with a simple to-do app.
+						app for managing your personal budgets</p>
+					<div class="wrapper_right">
+						<div class="box">
+							<div class="icon-red"><img src="./spirit/speed.png"></div>
+							<div class="content-red">
+								<h3 class="box__header_red">Fast Performance</h3>
+								Get your blood tests delivered at home collect
+								a sample from the news your blood tests.
+							</div>
+						</div>
+						<div class="box">
+							<div class="icon-blue"><img src="./spirit/prototyping.png"></div>
+							<div class="content-blue">
+								<h3 class="box__header_blue">Prototyping</h3>
+								Get your blood tests delivered at home collect
+								a sample from the news your blood tests.
+							</div>
+						</div>
+						<div class="box">
+							<div class="icon-green"><img src="./spirit/vector.png"></div>
+							<div class="content-green">
+								<h3 class="box__header_green">Vector Editing</h3>
+								Get your blood tests delivered at home collect
+								a sample from the news your blood tests.
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-        <section class="features" id="features">
-          <div class="features__left">
-            <div class="picture">
-              <img src="images/ellipse-1.png" class="ellipse">
-              <img src="images/phone-2.svg" class="phone-smart">
-            </div>
-          </div>
-          <div class="features__right">
-            <h2 class="features__title"> Awesome app </br>features</h2>
-            <p class="features__subtitle">Increase productivity with a simple to-do app.
-            app for managing your personal budgets</p>
-            <div class="wrapper_right">
-              <div class="box">
-                <div class="icon-red"><img src="spirit/speed.png"></div>
-                <div class="content-red">
-                  <h3 class="box__header_red">Fast Performance</h3>
-                  Get your blood tests delivered at home collect
-                a sample from the news your blood tests.</div>
-              </div>
-              <div class="box">
-                <div class="icon-blue"><img src="spirit/prototyping.png"></div>
-                <div class="content-blue">
-                  <h3 class="box__header_blue">Prototyping</h3>
-                  Get your blood tests delivered at home collect
-                a sample from the news your blood tests.</div>
-              </div>
-              <div class="box">
-                <div class="icon-green"><img src="spirit/vector.png"></div>
-                <div class="content-green">
-                  <h3 class="box__header_green">Vector Editing</h3>
-                  Get your blood tests delivered at home collect
-                a sample from the news your blood tests.</div>
-              </div>
-            </div>
-          </div>
-        </section>
+			<section class="jackpots">
+				<div class="jackpots__container">
 
-        <section class="jackpots">
-          <div class="jackpots__container">
+					<div class="jackpots__container_text">
+						<h2 class="title">Smart jackpots that you may love this anytime & anywhere</h2>
+						<p class="subtitle">The rise of mobile devices transforms the way we consume
+							information entirely and the world's most elevant channels such as Facebook.</p>
+					</div>
 
-            <div class="jackpots__container_text">
-              <h2 class="title">Smart jackpots that you may love this anytime & anywhere</h2>
-              <p class="subtitle">The rise of mobile devices transforms the way we consume
-              information entirely and the world's most elevant channels such as Facebook.</p>
-            </div>
+					<div class="jackpots__container_boxes">
+						<div class="box">
+							<div class="icon-red"><img src="./spirit/bill.png"></div>
+							<div class="content-red">
+								<h3 class="box__header_red">Automatic Payouts</h3>
+								Get your blood tests delivered at home collect a sample from the news your blood tests.
+							</div>
+						</div>
 
-            <div class="jackpots__container_boxes">
-              <div class="box">
-                <div class="icon-red"><img src="spirit/bill.png"></div>
-                <div class="content-red">
-                  <h3 class="box__header_red">Automatic Payouts</h3>
-                  Get your blood tests delivered at home collect a sample from the news your blood tests.</div>
-              </div>
+						<div class="box">
+							<div class="icon-blue"><img src="./spirit/network.png"></div>
+							<div class="content-blue">
+								<h3 class="box__header_blue">Network Effect</h3>
+								Get your blood tests delivered at home collect a sample from the news your blood tests.
+							</div>
+						</div>
 
-              <div class="box">
-                <div class="icon-blue"><img src="spirit/network.png"></div>
-                <div class="content-blue">
-                  <h3 class="box__header_blue">Network Effect</h3>
-                  Get your blood tests delivered at home collect a sample from the news your blood tests.</div>
-              </div>
+						<div class="box">
+							<div class="icon-green"><img src="./spirit/badge.png"></div>
+							<div class="content-green">
+								<h3 class="box__header_green">Bigger Rewards Method</h3>
+								Get your blood tests delivered at home collect a sample from the news your blood tests.
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-              <div class="box">
-                <div class="icon-green"><img src="spirit/badge.png"></div>
-                <div class="content-green">
-                  <h3 class="box__header_green">Bigger Rewards Method</h3>
-                  Get your blood tests delivered at home collect a sample from the news your blood tests.</div>
-              </div>
-            </div>
-          </div>
-        </section>
+			<section class="designed">
+				<div class="designed__container">
+					<img class="designed-image" src="./images/designed.svg">
+					<div class="designed-text">
+						<h2 class="designed-text__title">Designed & built by the latest code integration</h2>
+						<p class="designed-text__content">The rise of mobile devices transforms the way
+							we consume information entirely and the world's most elevant channels such as Facebook.</p>
+						<a href="" class="designed__button_link">Learn More</a>
+					</div>
+				</div>
+			</section>
 
-        <section class="designed">
-          <div class="designed__container">
-            <img class="designed-image" src="images/designed.svg">
-            <div class="designed-text">
-              <h2 class="designed-text__title">Designed & built by the latest code integration</h2>
-              <p class="designed-text__content">The rise of mobile devices transforms the way
-              we consume information entirely and the world's most elevant channels such as Facebook.</p>
-              <a href="" class="designed__button_link">Learn More</a>
-            </div>
-          </div>
-        </section>
+			<section class="why-choose">
+				<div class="why-choose__container">
 
-        <section class="why-choose">
-          <div class="why-choose__container">
+					<div class="why-choose__container_text">
+						<h2 class="title">Why you should choose our app</h2>
+						<p class="subtitle">The rise of mobile devices transforms the way we consume
+							information entirely<br> and the world's most elevant channels such as Facebook.</p>
+					</div>
 
-            <div class="why-choose__container_text">
-              <h2 class="title">Why you should choose our app</h2>
-              <p class="subtitle">The rise of mobile devices transforms the way we consume
-              information entirely<br> and the world's most elevant channels such as Facebook.</p>
-            </div>
+					<div class="why-choose__container_boxes">
+						<div class="box">
+							<div class="icon-red"><img src="./spirit/web-design.png"></div>
+							<div class="content-red">
+								<h3 class="box__header_red">App Development</h3>
+								Get your blood tests delivered at home collect a sample from the news your blood tests.
+							</div>
+						</div>
 
-            <div class="why-choose__container_boxes">
-              <div class="box">
-                <div class="icon-red"><img src="spirit/web-design.png"></div>
-                <div class="content-red">
-                  <h3 class="box__header_red">App Development</h3>
-                  Get your blood tests delivered at home collect a sample from the news your blood tests.</div>
-              </div>
+						<div class="box">
+							<div class="icon-blue"><img src="./spirit/trophy.png"></div>
+							<div class="content-blue">
+								<h3 class="box__header_blue">10 Times Award</h3>
+								Get your blood tests delivered at home collect a sample from the news your blood tests.
+							</div>
+						</div>
 
-              <div class="box">
-                <div class="icon-blue"><img src="spirit/trophy.png"></div>
-                <div class="content-blue">
-                  <h3 class="box__header_blue">10 Times Award</h3>
-                  Get your blood tests delivered at home collect a sample from the news your blood tests.</div>
-              </div>
+						<div class="box">
+							<div class="icon-orange"><img src="./spirit/computer.png"></div>
+							<div class="content-orange">
+								<h3 class="box__header_orange">Cloud Storage</h3>
+								Get your blood tests delivered at home collect a sample from the news your blood tests.
+							</div>
+						</div>
 
-              <div class="box">
-                <div class="icon-orange"><img src="spirit/computer.png"></div>
-                <div class="content-orange">
-                  <h3 class="box__header_orange">Cloud Storage</h3>
-                  Get your blood tests delivered at home collect a sample from the news your blood tests.</div>
-              </div>
+						<div class="box">
+							<div class="icon-green"><img src="./spirit/customer-support.png"></div>
+							<div class="content-green">
+								<h3 class="box__header_green">Customization</h3>
+								Get your blood tests delivered at home collect a sample from the news your blood tests.
+							</div>
+						</div>
 
-              <div class="box">
-                <div class="icon-green"><img src="spirit/customer-support.png"></div>
-                <div class="content-green">
-                  <h3 class="box__header_green">Customization</h3>
-                  Get your blood tests delivered at home collect a sample from the news your blood tests.</div>
-              </div>
+						<div class="box">
+							<div class="icon-gray"><img src="./spirit/ui.png"></div>
+							<div class="content-gray">
+								<h3 class="box__header_gray">UX Planning</h3>
+								Get your blood tests delivered at home collect a sample from the news your blood tests.
+							</div>
+						</div>
 
-              <div class="box">
-                <div class="icon-gray"><img src="spirit/ui.png"></div>
-                <div class="content-gray">
-                  <h3 class="box__header_gray">UX Planning</h3>
-                  Get your blood tests delivered at home collect a sample from the news your blood tests.</div>
-              </div>
+						<div class="box">
+							<div class="icon-redlight"><img src="./spirit/customer-service.png"></div>
+							<div class="content-redlight">
+								<h3 class="box__header_redlight">Customer Support</h3>
+								Get your blood tests delivered at home collect a sample from the news your blood tests.
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-              <div class="box">
-                <div class="icon-redlight"><img src="spirit/customer-service.png"></div>
-                <div class="content-redlight">
-                  <h3 class="box__header_redlight">Customer Support</h3>
-                  Get your blood tests delivered at home collect a sample from the news your blood tests.</div>
-              </div>
-            </div>
-          </div>
-        </section>
+			<section class="we-built">
+				<div class="we-built__container">
+					<div class="we-built__container_text">
+						<h2 class="title">Ultimate features<br>that we built</h2>
+						<p class="subtitle">The rise of mobile devices transforms the way we<br>
+							consume information entirely.</p>
+						<div class="we-built__container_boxes">
+							<div class="box">
+								<div class="icon-red"><img src="./spirit/web-design.png"></div>
+								<div class="content-red">
+									<h3 class="box__header_red">App Development</h3>
+									Get your blood tests delivered at home collect a sample from the news your blood tests.
+								</div>
+							</div>
+							<div class="box">
+								<div class="icon-gray"><img src="./spirit/ui.png"></div>
+								<div class="content-gray">
+									<h3 class="box__header_gray">UX Planning</h3>
+									Get your blood tests delivered at home collect a sample from the news your blood tests.
+								</div>
+							</div>
+							<div class="box">
+								<div class="icon-orange"><img src="./spirit/computer.png"></div>
+								<div class="content-orange">
+									<h3 class="box__header_orange">Cloud Storage</h3>
+									Get your blood tests delivered at home collect a sample from the news your blood tests.
+								</div>
+							</div>
+							<div class="box">
+								<div class="icon-redlight"><img src="./spirit/customer-service.png"></div>
+								<div class="content-redlight">
+									<h3 class="box__header_redlight">Customer Support</h3>
+									Get your blood tests delivered at home collect a sample from the news your blood tests.
+								</div>
+							</div>
+						</div>
+						<div class="we-built-button">
+							<a href="" target="_blank" class="we-built-btn">See all</a>
+						</div>
+					</div>
+					<div class="we-built__container_pictures">
+						<div class="pictures">
+							<img class="ellipses-2" src="./images/ellipses-2.png">
+							<img class="phone-first" src="./images/phone-3.svg">
+							<img class="phone-second" src="./images/phone-4.png">
+						</div>
+					</div>
+				</div>
+			</section>
 
-        <section class="we-built" >
-          <div class="we-built__container">
-            <div class="we-built__container_text">
-              <h2 class="title">Ultimate features<br>that we built</h2>
-              <p class="subtitle">The rise of mobile devices transforms the way we<br>
-              consume information entirely.</p>
-              <div class="we-built__container_boxes">
-                <div class="box">
-                  <div class="icon-red"><img src="spirit/web-design.png"></div>
-                  <div class="content-red">
-                    <h3 class="box__header_red">App Development</h3>
-                    Get your blood tests delivered at home collect a sample from the news your blood tests.</div>
-                </div>
-                <div class="box">
-                  <div class="icon-gray"><img src="spirit/ui.png"></div>
-                  <div class="content-gray">
-                    <h3 class="box__header_gray">UX Planning</h3>
-                    Get your blood tests delivered at home collect a sample from the news your blood tests.</div>
-                </div>
-                <div class="box">
-                  <div class="icon-orange"><img src="spirit/computer.png"></div>
-                  <div class="content-orange">
-                    <h3 class="box__header_orange">Cloud Storage</h3>
-                    Get your blood tests delivered at home collect a sample from the news your blood tests.</div>
-                </div>
-                <div class="box">
-                  <div class="icon-redlight"><img src="spirit/customer-service.png"></div>
-                  <div class="content-redlight">
-                    <h3 class="box__header_redlight">Customer Support</h3>
-                    Get your blood tests delivered at home collect a sample from the news your blood tests.</div>
-                </div>
-              </div>
-              <div class="we-built-button">
-              <a href="" target="_blank" class="we-built-btn">See all</a>
-              </div>
-            </div>
-            <div class="we-built__container_pictures">
-              <div class="pictures">
-              <img class="elipses-2" src="images/elipses-2.png">
-              <img class="phone-first" src="images/phone-3.svg">
-              <img class="phone-second" src="images/phone-4.png">
-              </div>
-            </div>
-          </div>
-        </section>
+			<section class="planning" id="pricing">
+				<div class="planning__container">
+					<div class="planning__container-text">
+						<h2 class="title">Get awesome features, without<br>extra charges</h2>
+						<p class="subtitle">The rise of mobile devices transforms the way we consume information entirely<br>
+							and the world's most elevant channels such as Facebook.</p>
+					</div>
 
-        <section class="planning" id="pricing">
-          <div class="planning__container">
-            <div class="planning__container-text">
-              <h2 class="title">Get awesome features, without<br>extra charges</h2>
-              <p class="subtitle">The rise of mobile devices transforms the way we consume information entirely<br>
-                and the world's most elevant channels such as Facebook.</p>
-            </div>
+					<div class="planning__container-offer">
 
-            <div class="planning__container-offer">
+						<input type="checkbox" id="checkbox">
 
-              <input type="checkbox" id="checkbox">
+						<label class="planning-button" for="checkbox">
+							<div class="switch"></div>
+							<div class="month">Monthly</div>
+							<div class="year">Annually</div>
+						</label>
 
-              <label class="planning-button" for="checkbox">
-                <div class="switch"></div>
-                <div class="month">Monthly</div>
-                <div class="year">Annually</div>
-              </label>
+						<div class="left-card">
+							<div class="left-card__front">
+								<div class="left-front__container">
+									<div class="left-front__container_header">
+										<p><span class="dolars">$0</span>/ month</p>
+										<span class="front-header__title">Business Card</span>
+										For small teams or office
+									</div>
+									<div class="left-front__container_content">
+										<ul class="front-header__list">
+											<li class="list-item">Drag & Drop Builder</li>
+											<li class="list-item">1,000's of Templates</li>
+											<li class="list-item">Blog Support Tools</li>
+											<li class="list-item">eCommerce Store</li>
+										</ul>
+									</div>
+									<a href="" target="_blank"><button class="left-front__container_button" type="button">Start free
+											trial</button></a>
+								</div>
+							</div>
 
-              <div class="left-card">
-                <div class="left-card__front">
-                  <div class="left-front__container">
-                    <div class="left-front__container_header">
-                      <p><span class="dolars">$0</span>/ month</p>
-                      <span class="front-header__title">Business Card</span>
-                      For small teams or office
-                    </div>
-                    <div class="left-front__container_content">
-                      <ul class="front-header__list">
-                        <li class="list-item">Drag & Drop Builder</li>
-                        <li class="list-item" >1,000's of Templates</li>
-                        <li class="list-item" >Blog Support Tools</li>
-                        <li class="list-item" >eCommerce Store</li>
-                      </ul>
-                    </div>
-                    <a href="" target="_blank"><button class="left-front__container_button" type="button">Start free trial</button></a>
-                  </div>
-                </div>
+							<div class="left-card__back">
+								<div class="left-back__container">
+									<div class="left-back__container_header">
+										<p><span class="dolars">$0</span>/ year</p>
+										<span class="back-header__title">Business Card</span>
+										For small teams or office
+									</div>
+									<div class="left-back__container_content">
+										<ul class="back-header__list">
+											<li class="list-item">Drag & Drop Builder</li>
+											<li class="list-item">1,000's of Templates</li>
+											<li class="list-item">Blog Support Tools</li>
+											<li class="list-item">eCommerce Store</li>
+										</ul>
+									</div>
+									<a href="" target="_blank"><button class="left-front__container_button" type="button">Start free
+											trial</button></a>
+								</div>
+							</div>
+						</div>
 
-                <div class="left-card__back">
-                  <div class="left-back__container">
-                    <div class="left-back__container_header">
-                      <p><span class="dolars">$0</span>/ year</p>
-                      <span class="back-header__title">Business Card</span>
-                      For small teams or office
-                    </div>
-                    <div class="left-back__container_content">
-                      <ul class="back-header__list">
-                        <li class="list-item">Drag & Drop Builder</li>
-                        <li class="list-item" >1,000's of Templates</li>
-                        <li class="list-item" >Blog Support Tools</li>
-                        <li class="list-item" >eCommerce Store</li>
-                      </ul>
-                    </div>
-                    <a href="" target="_blank"><button class="left-front__container_button" type="button">Start free trial</button></a>
-                  </div>
-                </div>
-              </div>
+						<div class="right-card">
+							<div class="right-card__front">
+								<div class="right-front__container">
+									<div class="right-front__container_header">
+										<p><span class="dolars">$99</span>/ month</p>
+										<span class="front-header__title">Pro Master</span>
+										For Best Opportunities
+									</div>
+									<div class="right-front__container_content">
+										<ul class="front-header__list">
+											<li class="list-item">Drag & Drop Builder</li>
+											<li class="list-item">1,000's of Templates</li>
+											<li class="list-item">Blog Support Tools</li>
+											<li class="list-item">eCommerce Store</li>
+										</ul>
+									</div>
+									<a href="" target="_blank"><button class="right-front__container_button" type="button">Subscribe
+											now</button></a>
+									<a href="" target="_blank" class="trial">
+										<p>Or Start 14 days trial</p>
+									</a>
+								</div>
+							</div>
+							<div class="right-card__back">
+								<div class="right-back__container">
+									<div class="right-back__container_header">
+										<p><span class="dolars">$999</span>/ year</p>
+										<span class="back-header__title">Pro Master</span>
+										For Best Opportunities
+									</div>
+									<div class="right-back__container_content">
+										<ul class="back-header__list">
+											<li class="list-item">Drag & Drop Builder</li>
+											<li class="list-item">1,000's of Templates</li>
+											<li class="list-item">Blog Support Tools</li>
+											<li class="list-item">eCommerce Store</li>
+										</ul>
+									</div>
+									<a href="" target="_blank"><button class="right-back__container_button" type="button">Subscribe
+											now</button></a>
+									<a href="" target="_blank" class="trial">
+										<p>Or Start 14 days trial</p>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div style="clear: both;"></div>
+					</div>
+				</div>
+			</section>
 
-              <div class="right-card">
-                <div class="right-card__front">
-                  <div class="right-front__container">
-                    <div class="right-front__container_header">
-                      <p><span class="dolars">$99</span>/ month</p>
-                      <span class="front-header__title">Pro Master</span>
-                      For Best Opportunities
-                    </div>
-                    <div class="right-front__container_content">
-                      <ul class="front-header__list">
-                        <li class="list-item">Drag & Drop Builder</li>
-                        <li class="list-item" >1,000's of Templates</li>
-                        <li class="list-item" >Blog Support Tools</li>
-                        <li class="list-item" >eCommerce Store</li>
-                      </ul>
-                    </div>
-                    <a href="" target="_blank"><button class="right-front__container_button" type="button">Subscribe now</button></a>
-                    <a href="" target="_blank" class="trial"><p>Or Start 14 days trial</p></a>
-                  </div>
-                </div>
-                <div class="right-card__back">
-                  <div class="right-back__container">
-                    <div class="right-back__container_header">
-                      <p><span class="dolars">$999</span>/ year</p>
-                      <span class="back-header__title">Pro Master</span>
-                      For Best Opportunities
-                    </div>
-                    <div class="right-back__container_content">
-                      <ul class="back-header__list">
-                        <li class="list-item">Drag & Drop Builder</li>
-                        <li class="list-item" >1,000's of Templates</li>
-                        <li class="list-item" >Blog Support Tools</li>
-                        <li class="list-item" >eCommerce Store</li>
-                      </ul>
-                    </div>
-                    <a href="" target="_blank"><button class="right-back__container_button" type="button">Subscribe now</button></a>
-                    <a href="" target="_blank" class="trial"><p>Or Start 14 days trial</p></a>
-                  </div>
-                </div>
-              </div>
-              <div style="clear: both;"></div>
-            </div>
-          </div>
-        </section>
+			<section class="slider">
+				<div class="slider__container">
+					<div class="slider__container_map">
+						<img class="map-image" src="images/map.png">
+					</div>
 
-        <section class="slider">
-          <div class="slider__container">
-            <div class="slider__container_map">
-              <img class="map-image" src="images/map.png">
-            </div>
+					<div class="slider__container_content">
+						<div class="content-tex">
+							<h3 class="title">Meet Client Satisfaction<br>
+								by using product</h3>
+							<p class="text">The rise of mobile devices transforms the way we
+								consume. elevant channels such as Facebook.</p>
+						</div>
 
-            <div class="slider__container_content">
-              <div class="content-tex">
-                <h3 class="title">Meet Client Satisfaction<br>
-                by using product</h3>
-                <p class="text">The rise of mobile devices transforms the way we
-                consume. elevant channels such as Facebook.</p>
-              </div>
+						<div class="content-slider">
+							<div class="lazy slider-slider">
+								<div class="feedback">
+									<div class="feeback_stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+									<h2 class="feedback_title">User friendly & Customizable</h2>
+									<p class="feedback_text">
+										Bring to the table win-win survival strategies to ensure
+										proactive that has evolved from generation X is on the runway
+										heading towards domination. At the end of the day, going forward,
+										a new normal a streamlined cloud solution. User generated content
+										in real-time will have multiple touchpoints for offshoring.
+									</p>
+									<div class="feedback_author">
+										<div class="author-portrait"><img class="image" src="img/zoltan.png"></div>
+										<div class="author-name"><strong>Zoltan Nemeth</strong><br>CEO of Pixler Lab</div>
+									</div>
+								</div>
+								<div class="feedback">
+									<div class="feeback_stars">&#9733;&#9733;&#9733;&#9733;<span class="empty_stars">&#9734;</span></div>
+									<h2 class="feedback_title">Good support</h2>
+									<p class="feedback_text">
+										Bring to the table win-win survival strategies to ensure
+										proactive that has evolved from generation X is on the runway
+										heading towards domination. At the end of the day, going forward,
+										a new normal a streamlined cloud solution. User generated content
+										in real-time will have multiple touchpoints for offshoring.
+									</p>
+									<div class="feedback_author">
+										<div class="author-portrait"><img class="image" src="img/john-doe.png"></div>
+										<div class="author-name"><strong>John Doe</strong><br>CEO of Acme</div>
+									</div>
+								</div>
+								<div class="feedback">
+									<div class="feeback_stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+									<h2 class="feedback_title">Cool features</h2>
+									<p class="feedback_text">
+										Bring to the table win-win survival strategies to ensure
+										proactive that has evolved from generation X is on the runway
+										heading towards domination. At the end of the day, going forward,
+										a new normal a streamlined cloud solution. User generated content
+										in real-time will have multiple touchpoints for offshoring.
+									</p>
+									<div class="feedback_author">
+										<div class="author-portrait"><img class="image" src="img/lois-lane.png"></div>
+										<div class="author-name"><strong>Lois Lane</strong><br>Editor-in-chief-of-Daily Planet</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-              <div class="content-slider">
-                <div class="lazy slider-slider" >
-                  <div class="feedback">
-                    <div class="feeback_stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                    <h2 class="feedback_title">User friendly & Customizable</h2>
-                    <p class="feedback_text">
-                      Bring to the table win-win survival strategies to ensure
-                      proactive that has evolved from generation X is on the runway
-                      heading towards domination. At the end of the day, going forward,
-                      a new normal a streamlined cloud solution. User generated content
-                      in real-time will have multiple touchpoints for offshoring.
-                    </p>
-                    <div class="feedback_author">
-                      <div class="author-portrait"><img class="image" src="img/zoltan.png"></div>
-                      <div class="author-name"><strong>Zoltan Nemeth</strong><br>CEO of Pixler Lab</div>
-                    </div>
-                  </div>
-                  <div class="feedback">
-                    <div class="feeback_stars">&#9733;&#9733;&#9733;&#9733;<span class="empty_stars">&#9734;</span></div>
-                    <h2 class="feedback_title">Good support</h2>
-                    <p class="feedback_text">
-                      Bring to the table win-win survival strategies to ensure
-                      proactive that has evolved from generation X is on the runway
-                      heading towards domination. At the end of the day, going forward,
-                      a new normal a streamlined cloud solution. User generated content
-                      in real-time will have multiple touchpoints for offshoring.
-                    </p>
-                    <div class="feedback_author">
-                      <div class="author-portrait"><img class="image" src="img/john-doe.png"></div>
-                      <div class="author-name"><strong>John Doe</strong><br>CEO of Acme</div>
-                    </div>
+			<section class="faq" id="faq">
+				<div class="faq__container">
+					<div class="faq__text">
+						<h3 class="faq__text_title">
+							Frequently answered questions
+						</h3>
+						<p class="faq__text_contents">The rise of mobile devices transforms the way we consume
+							information entirely <br> and the world's most elevant channels such as Facebook.
+						</p>
+					</div>
+					<div class="faq__accordion">
+						<button class="accordion">How to contact with riders emergency?</button>
+						<div class="panel">
+							<p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches
+								to corporate strategy foster collaborative thinking to further the overall value proposition.
+								Organically
+								grow the holistic world view of disruptive innovation via workplace diversity and empowerment. Bring to
+								the table win-win survival strategies to ensure proactive domination. At the end of the day, going
+								forward,
+								a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud
+								solution.
+								User generated content in real-time will have multiple touchpoints for offshoring.</p>
+						</div>
+						<button class="accordion">App installation failed, how to update system information?</button>
+						<div class="panel">
+							<p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches
+								to corporate strategy foster collaborative thinking to further the overall value proposition.
+								Organically
+								grow the holistic world view of disruptive innovation via workplace diversity and empowerment. Bring to
+								the table win-win survival strategies to ensure proactive domination. At the end of the day, going
+								forward,
+								a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud
+								solution.
+								User generated content in real-time will have multiple touchpoints for offshoring.</p>
+						</div>
+						<button class="accordion">Website reponse taking time, how to improve?</button>
+						<div class="panel">
+							<p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches
+								to corporate strategy foster collaborative thinking to further the overall value proposition.
+								Organically
+								grow the holistic world view of disruptive innovation via workplace diversity and empowerment. Bring to
+								the table win-win survival strategies to ensure proactive domination. At the end of the day, going
+								forward,
+								a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud
+								solution.
+								User generated content in real-time will have multiple touchpoints for offshoring.</p>
+						</div>
+						<button class="accordion">New update fixed all bug and issues</button>
+						<div class="panel">
+							<p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches
+								to corporate strategy foster collaborative thinking to further the overall value proposition.
+								Organically
+								grow the holistic world view of disruptive innovation via workplace diversity and empowerment. Bring to
+								the table win-win survival strategies to ensure proactive domination. At the end of the day, going
+								forward,
+								a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud
+								solution.
+								User generated content in real-time will have multiple touchpoints for offshoring.</p>
+						</div>
+						<button class="accordion">How to contact with riders emergency?</button>
+						<div class="panel">
+							<p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches
+								to corporate strategy foster collaborative thinking to further the overall value proposition.
+								Organically
+								grow the holistic world view of disruptive innovation via workplace diversity and empowerment. Bring to
+								the table win-win survival strategies to ensure proactive domination. At the end of the day, going
+								forward,
+								a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud
+								solution.
+								User generated content in real-time will have multiple touchpoints for offshoring.</p>
+						</div>
+					</div>
+				</div>
+			</section>
 
-                  </div>
-                  <div class="feedback">
-                    <div class="feeback_stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                    <h2 class="feedback_title">Cool features</h2>
-                    <p class="feedback_text">
-                      Bring to the table win-win survival strategies to ensure
-                      proactive that has evolved from generation X is on the runway
-                      heading towards domination. At the end of the day, going forward,
-                      a new normal a streamlined cloud solution. User generated content
-                      in real-time will have multiple touchpoints for offshoring.
-                    </p>
-                    <div class="feedback_author">
-                      <div class="author-portrait"><img class="image" src="img/lois-lane.png" ></div>
-                      <div class="author-name"><strong>Lois Lane</strong><br>Editor-in-chief-of-Daily Planet</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+			<section class="download">
+				<div class="download__container">
+					<div class="download__text">
+						<div class="download__text_title">Download our App now !</div>
+						<div class="download__text_contents">
+							The rise of mobile devices transforms the way we consume information
+							entirely and the world's most elevant channels such as Facebook.
+						</div>
+						<div class="download__text_logos">
+							<div class="logo-google">
+								<a class="download-link" href="https://play.google.com/store/apps" target="_blank"><img
+										src="images/google-play.png"></a>
+							</div>
+							<div class="logo-app">
+								<a class="download-link" href="https://www.apple.com/pl/ios/app-store/" target="_blank"><img
+										src="images/app-store.png"></a>
+							</div>
+						</div>
+					</div>
+					<div class="download__image"><img class="download__picture" src="images/download.svg"></div>
+				</div>
+			</section>
+		</main>
 
-        <section class="faq" id="faq">
-          <div class="faq__container">
-            <div class="faq__text">
-              <h3 class="faq__text_title">
-              Frequently answered questions
-              </h3>
-              <p class="faq__text_contents">The rise of mobile devices transforms the way we consume
-              information entirely <br> and the world's most elevant channels such as Facebook.
-              </p>
-            </div>
-            <div class="faq__accordion">
-              <button class="accordion">How to contact with riders emergency?</button>
-              <div class="panel">
-                  <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches
-                  to corporate strategy foster collaborative thinking to further the overall value proposition. Organically
-                  grow the holistic world view of disruptive innovation via workplace diversity and empowerment. Bring to
-                  the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward,
-                  a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution.
-                  User generated content in real-time will have multiple touchpoints for offshoring.</p>
-              </div>
-              <button class="accordion">App installation failed, how to update system information?</button>
-              <div class="panel">
-                  <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches
-                  to corporate strategy foster collaborative thinking to further the overall value proposition. Organically
-                  grow the holistic world view of disruptive innovation via workplace diversity and empowerment. Bring to
-                  the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward,
-                  a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution.
-                  User generated content in real-time will have multiple touchpoints for offshoring.</p>
-              </div>
-              <button class="accordion">Website reponse taking time, how to improve?</button>
-              <div class="panel">
-                  <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches
-                  to corporate strategy foster collaborative thinking to further the overall value proposition. Organically
-                  grow the holistic world view of disruptive innovation via workplace diversity and empowerment. Bring to
-                  the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward,
-                  a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution.
-                  User generated content in real-time will have multiple touchpoints for offshoring.</p>
-              </div>
-              <button class="accordion">New update fixed all bug and issues</button>
-              <div class="panel">
-                  <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches
-                  to corporate strategy foster collaborative thinking to further the overall value proposition. Organically
-                  grow the holistic world view of disruptive innovation via workplace diversity and empowerment. Bring to
-                  the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward,
-                  a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution.
-                  User generated content in real-time will have multiple touchpoints for offshoring.</p>
-              </div>
-              <button class="accordion">How to contact with riders emergency?</button>
-              <div class="panel">
-                  <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches
-                  to corporate strategy foster collaborative thinking to further the overall value proposition. Organically
-                  grow the holistic world view of disruptive innovation via workplace diversity and empowerment. Bring to
-                  the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward,
-                  a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution.
-                  User generated content in real-time will have multiple touchpoints for offshoring.</p>
-              </div>
-            </div>
-          </div>
-        </section>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__particle1">
+					<img class="particle" src="images/particle.svg">
+				</div>
+				<div class="footer__particle2">
+					<img class="particle" src="images/particle.svg">
+				</div>
+				<div class="footer__logo"><a class="footer__logo_link" href="https://dribbble.com/ArifurRahman"
+						target="_blank"><span class="footer__logo_span">App</span>Lab</a></div>
+				<div class="footer__menu">
+					<ul class="footer__list">
+						<li class="footer__list_item"><a class="footer__list_link" href="#header">Home</a></li>
+						<li class="footer__list_item"><a class="footer__list_link" href="#features">Key Features</a></li>
+						<li class="footer__list_item"><a class="footer__list_link" href="#pricing">Pricing</a></li>
+						<li class="footer__list_item"><a class="footer__list_link" href="#testimonial">Testimonial</a></li>
+						<li class="footer__list_item"><a class="footer__list_link" href="#faq">FAQ</a></li>
+					</ul>
+				</div>
+				<div class="footer__social">
+					<div class="footer___social_icon"><a class="footer__social_link" href="https://pl-pl.facebook.com/"
+							target="_blank"><i class="icon-facebook"></i></a></div>
+					<div class="footer___social_icon"><a class="footer__social_link" href="https://twitter.com/?lang=pl"
+							target="_blank"><i class="icon-twitter"></i></a></div>
+					<div class="footer___social_icon"><a class="footer__social_link" href="https://slack.com/intl/en-pl/"
+							target="_blank"><i class="icon-slack"></i></a></div>
+					<div class="footer___social_icon"><a class="footer__social_link" href="https://github.com/" target="_blank"><i
+								class="icon-github-circled"></i></a></div>
+				</div>
+				<div class="footer__copyright">Copyright&copy;<a class="footer__copyright_link"
+						href="https://dribbble.com/ArifurRahman" target="_blank"> Arifur Rahman Tushar </a>2019. All rights reserved
+				</div>
+			</div>
+		</footer>
+	</div>
 
-        <section class="download">
-          <div class="download__container">
-            <div class="download__text">
-              <div class="download__text_title">Download our App now !</div>
-              <div class="download__text_contents">
-                The rise of mobile devices transforms the way we consume information
-                entirely and the world's most elevant channels such as Facebook.
-              </div>
-              <div class="download__text_logos">
-                <div class="logo-google">
-                  <a class="download-link" href="https://play.google.com/store/apps" target="_blank"  ><img src="images/google-play.png"></a>
-                </div>
-                <div class="logo-app">
-                  <a class="download-link" href="https://www.apple.com/pl/ios/app-store/" target="_blank"   ><img src="images/app-store.png"></a>
-                </div>
-              </div>
-            </div>
-            <div class="download__image"><img class="download__picture" src="images/download.svg"></div>
-          </div>
-        </section>
-      </main>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
 
-      <footer class="footer">
-        <div class="footer__container">
-          <div class="footer__particle1">
-          <img class="particle" src="images/particle.svg">
-          </div>
-          <div class="footer__particle2">
-            <img class="particle" src="images/particle.svg">
-            </div>
-          <div class="footer__logo"><a class="footer__logo_link" href="https://dribbble.com/ArifurRahman" target="_blank"><span class="footer__logo_span">App</span>Lab</a></div>
-          <div class="footer__menu">
-            <ul class="footer__list">
-              <li class="footer__list_item"><a class="footer__list_link" href="#header">Home</a></li>
-              <li class="footer__list_item"><a class="footer__list_link" href="#features">Key Features</a></li>
-              <li class="footer__list_item"><a class="footer__list_link" href="#pricing">Pricing</a></li>
-              <li class="footer__list_item"><a class="footer__list_link" href="#testimonial">Testimonial</a></li>
-              <li class="footer__list_item"><a class="footer__list_link" href="#faq">FAQ</a></li>
-            </ul>
-          </div>
-          <div class="footer__social">
-            <div class="footer___social_icon"><a class="footer__social_link" href="https://pl-pl.facebook.com/" target="_blank"><i class="icon-facebook"></i></a></div>
-            <div class="footer___social_icon"><a class="footer__social_link" href="https://twitter.com/?lang=pl" target="_blank"><i class="icon-twitter"></i></a></div>
-            <div class="footer___social_icon"><a class="footer__social_link" href="https://slack.com/intl/en-pl/" target="_blank"><i class="icon-slack"></i></a></div>
-            <div class="footer___social_icon"><a class="footer__social_link" href="https://github.com/" target="_blank"><i class="icon-github-circled"></i></a></div>
-          </div>
-          <div class="footer__copyright">Copyright&copy;<a class="footer__copyright_link" href="https://dribbble.com/ArifurRahman" target="_blank"> Arifur Rahman Tushar </a>2019. All rights reserved</div>
-        </div>
-      </footer>
+</body>
 
-    </wrapper>
-  </body>
 </html>

@@ -1,11 +1,13 @@
 @media (max-width: 620px) {
   .designed {
     @include centered;
+
     border-bottom: 2px solid $border_color;
 
     .designed__container {
       @include centered;
-      margin: 0px 20px;
+
+      margin: 0 20px;
       padding-bottom: 50px;
 
       .designed-image {
@@ -14,8 +16,9 @@
       }
 
       .designed-text {
-        max-width: 100%;
         @include flex-primary;
+
+        max-width: 100%;
         flex-direction: column;
         margin-top: 60px;
         color: $body-color;
@@ -24,19 +27,20 @@
           color: $accent;
           font-size: $title-font-size;
           font-weight: $title-font-weight;
-          margin: 0px 0px 20px;
+          margin: 0 0 20px;
           line-height: 140%;
         }
 
         .designed-text__content {
           color: $body-color;
-          font-size: $paragraf-font-size;
+          font-size: $paragraph-font-size;
           font-family: $body-font;
           padding-right: 10px;
         }
 
         .designed__button_link {
           @include blue-button;
+
           width: 80%;
           height: 65px;
           padding-top: 20px;
@@ -54,13 +58,15 @@
 @media (min-width: 621px) {
   .designed {
     @include centered;
+
     border-bottom: 2px solid $border_color;
 
     .designed__container {
       @include centered;
       @include flex-primary;
+
       flex-direction: column;
-      margin: 0px 50px;
+      margin: 0 50px;
       padding-bottom: 50px;
 
       .designed-image {
@@ -73,8 +79,9 @@
       }
 
       .designed-text {
-        width: 580px;
         @include flex-primary;
+
+        width: 580px;
         flex-direction: column;
         margin-top: 60px;
         color: $body-color;
@@ -83,19 +90,20 @@
           color: $accent;
           font-size: $title-font-size;
           font-weight: $title-font-weight;
-          margin: 0px 0px 20px;
+          margin: 0 0 20px;
           line-height: 140%;
         }
 
         .designed-text__content {
           color: $body-color;
-          font-size: $paragraf-font-size;
+          font-size: $paragraph-font-size;
           font-family: $body-font;
           padding-right: 40px;
         }
 
         .designed__button_link {
           @include blue-button;
+
           width: 80%;
           height: 65px;
           padding-top: 20px;
@@ -116,6 +124,7 @@
 
     .designed__container {
       @include flex-basic;
+
       width: 840px;
       margin: 40px 20px;
       flex-direction: row;
@@ -128,32 +137,34 @@
       }
 
       .designed-text {
-        width: 410px;
         @include flex-primary;
+
+        width: 410px;
         flex-direction: column;
         align-items: flex-start;
-        margin-top: 0px;
+        margin-top: 0;
         color: $body-color;
 
         .designed-text__title {
           color: $accent;
           font-size: $title-font-size;
           font-weight: $title-font-weight;
-          margin: 0px 0px 20px;
+          margin: 0 0 20px;
           line-height: 140%;
         }
 
         .designed-text__content {
           color: $body-color;
-          font-size: $paragraf-font-size;
+          font-size: $paragraph-font-size;
           font-family: $body-font;
           box-sizing: border-box;
           margin-bottom: 20px;
-          padding-right: 0px;
+          padding-right: 0;
         }
 
         .designed-button {
           @include blue-button;
+
           width: 210px;
           height: 65px;
           margin-top: 30px;
@@ -167,18 +178,19 @@
   .designed {
     .designed__container {
       @include flex-basic;
+
       width: 1050px;
 
       .designed-image {
         width: 480px;
-        transform: translate(0px);
+        transform: translate(0);
       }
 
       .designed-text {
         width: 500px;
 
         .designed-text__title {
-          margin: 0px 0px 20px 40px;
+          margin: 0 0 20px 40px;
         }
 
         .designed-text__content {
@@ -186,7 +198,7 @@
         }
 
         .designed-button {
-          margin: 30px 0px 0px 40px;
+          margin: 30px 0 0 40px;
         }
       }
     }

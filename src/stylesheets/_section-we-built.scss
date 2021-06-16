@@ -4,7 +4,7 @@
 
     .we-built__container {
       max-width: 100%;
-      margin: 30px 0px;
+      margin: 30px 0;
       overflow: hidden;
 
       .we-built__container_text {
@@ -22,83 +22,97 @@
 
         .subtitle {
           color: $body-color;
-          font-size: $paragraf-font-size;
+          font-size: $paragraph-font-size;
           padding-bottom: 30px;
         }
 
         .we-built__container_boxes {
           @include flex-primary;
+
           flex-direction: column;
 
           .box {
             @include flex-primary;
+
             flex-direction: column;
             margin-bottom: 60px;
 
             .icon-red {
               @include box-icon;
+
               background-color: $icon-red-bg;
               margin-bottom: 30px;
             }
 
             .content-red {
               @include centered;
+
               color: $body-color;
               text-align: center;
 
               .box__header_red {
                 @include box-header;
+
                 color: $accent;
               }
             }
 
             .icon-gray {
               @include box-icon;
+
               background-color: $icon-blue-bg;
               margin-bottom: 30px;
             }
 
             .content-gray {
               @include centered;
+
               color: $body-color;
               text-align: center;
 
               .box__header_gray {
                 @include box-header;
+
                 color: $accent;
               }
             }
 
             .icon-orange {
               @include box-icon;
+
               background-color: $icon-orange-bg;
               margin-bottom: 30px;
             }
 
             .content-orange {
               @include centered;
+
               color: $body-color;
               text-align: center;
 
               .box__header_orange {
                 @include box-header;
+
                 color: $accent;
               }
             }
 
             .icon-redlight {
               @include box-icon;
+
               background-color: $icon-gray-bg;
               margin-bottom: 30px;
             }
 
             .content-redlight {
               @include centered;
+
               color: $body-color;
               text-align: center;
 
               .box__header_redlight {
                 @include box-header;
+
                 color: $accent;
               }
             }
@@ -110,6 +124,7 @@
 
           .we-built-btn {
             @include button;
+
             width: 80%;
             text-align: center;
             text-decoration: none;
@@ -126,6 +141,7 @@
       .we-built__container_pictures {
         @include centered;
         @include flex-primary;
+
         flex-direction: column;
         max-width: 100%;
         height: 100%;
@@ -139,7 +155,7 @@
           max-width: 100%;
           max-height: 100%;
 
-          .elipses-2 {
+          .ellipses-2 {
             width: 100%;
             z-index: -1;
           }
@@ -148,15 +164,15 @@
             position: absolute;
             width: 65%;
             transform: rotate(-15deg) translateX(5%) translateY(1%);
-            top: 0px;
-            left: 0px;
+            top: 0;
+            left: 0;
             z-index: 1;
           }
 
           .phone-second {
             position: absolute;
             top: 0;
-            left: 0px;
+            left: 0;
             transform: translateX(36%) translateY(3%);
             max-width: 80%;
             z-index: 2;
@@ -174,8 +190,9 @@
 
     .we-built__container {
       @include flex-primary;
+
       max-width: 635px;
-      margin: 30px 0px;
+      margin: 30px 0;
 
       .we-built__container_text {
         margin-bottom: 30px;
@@ -192,85 +209,99 @@
 
         .subtitle {
           color: $body-color;
-          font-size: $paragraf-font-size;
+          font-size: $paragraph-font-size;
           padding-bottom: 30px;
         }
 
         .we-built__container_boxes {
           @include flex-basic;
+
           justify-content: space-evenly;
           flex-direction: row;
 
           .box {
-            width: 260px;
             @include flex-primary;
+
+            width: 260px;
             flex-direction: column;
             margin-bottom: 60px;
 
             .icon-red {
               @include box-icon;
+
               background-color: $icon-red-bg;
               margin-bottom: 30px;
             }
 
             .content-red {
               @include centered;
+
               color: $body-color;
               text-align: center;
 
               .box__header_red {
                 @include box-header;
+
                 color: $accent;
               }
             }
 
             .icon-gray {
               @include box-icon;
+
               background-color: $icon-blue-bg;
               margin-bottom: 30px;
             }
 
             .content-gray {
               @include centered;
+
               color: $body-color;
               text-align: center;
 
               .box__header_gray {
                 @include box-header;
+
                 color: $accent;
               }
             }
 
             .icon-orange {
               @include box-icon;
+
               background-color: $icon-orange-bg;
               margin-bottom: 30px;
             }
 
             .content-orange {
               @include centered;
+
               color: $body-color;
               text-align: center;
 
               .box__header_orange {
                 @include box-header;
+
                 color: $accent;
               }
             }
 
             .icon-redlight {
               @include box-icon;
+
               background-color: $icon-gray-bg;
               margin-bottom: 30px;
             }
 
             .content-redlight {
               @include centered;
+
               color: $body-color;
               text-align: center;
 
               .box__header_redlight {
                 @include box-header;
+
                 color: $accent;
               }
             }
@@ -282,6 +313,7 @@
 
           .we-built-btn {
             @include button;
+
             width: 80%;
             text-align: center;
             text-decoration: none;
@@ -298,6 +330,7 @@
       .we-built__container_pictures {
         @include centered;
         @include flex-primary;
+
         flex-direction: column;
         max-width: 100%;
         height: 100%;
@@ -310,7 +343,7 @@
           max-width: 100%;
           max-height: 100%;
 
-          .elipses-2 {
+          .ellipses-2 {
             max-width: 100%;
             z-index: -1;
           }
@@ -319,15 +352,15 @@
             position: absolute;
             width: 60%;
             transform: rotate(-15deg) translateX(5%) translateY(1%);
-            top: 0px;
-            left: 0px;
+            top: 0;
+            left: 0;
             z-index: 1;
           }
 
           .phone-second {
             position: absolute;
             top: 0;
-            left: 0px;
+            left: 0;
             transform: translateX(44%) translateY(3%);
             max-width: 75%;
             z-index: 2;
@@ -341,27 +374,26 @@
 @media (min-width: 900px) {
   .we-built {
     @include centered;
+
     overflow: hidden;
 
     .we-built__container {
-      position: relative;
       @include flex-primary;
-      justify-content: flex-start;
-      min-width: 899px;
-      margin: 30px 0px;
       @include margin-auto;
 
+      position: relative;
+      justify-content: flex-start;
+      min-width: 899px;
+      margin: 30px 0;
+
       .we-built__container_text {
-        max-width: 560px;
         @include flex-primary;
+
+        max-width: 560px;
         align-items: flex-start;
         flex-direction: column;
         padding-left: 30px;
-        margin-left: 0px;
-
-        .title {}
-
-        .subtitle {}
+        margin-left: 0;
 
         .we-built__container_boxes {
           width: 570px;
@@ -392,8 +424,6 @@
         }
 
         .we-built-button {
-
-          //@include flex-primary;
           .we-built-btn {
             width: 220px;
             text-align: center;
@@ -416,7 +446,7 @@
         z-index: -1;
 
         .pictures {
-          .elipses-2 {
+          .ellipses-2 {
             position: absolute;
             width: 100%;
             height: 90%;
@@ -455,10 +485,6 @@
       .we-built__container_text {
         padding-left: 60px;
 
-        .title {}
-
-        .subtitle {}
-
         .we-built__container_boxes {
           width: 710px;
 
@@ -470,7 +496,7 @@
 
       .we-built__container_pictures {
         .pictures {
-          .elipses-2 {
+          .ellipses-2 {
             width: 95%;
             height: 95%;
             top: 70px;
