@@ -18,13 +18,15 @@ import 'slick-carousel';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-const { $ } = window;
+let { $jq } = window;
 window.$ = window.jQuery;
 window.jQuery = jQuery;
+$jq = jQuery.noConflict();
+
 
 const slider = function moveImagesInSlider() {
-  $(document).ready(() => {
-    $('.lazy').slick();
+  $jq(document).ready(() => {
+    $jq('.lazy').slick();
   });
 };
 
